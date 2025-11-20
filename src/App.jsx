@@ -5,6 +5,13 @@ import Lenis from 'lenis';
 import HomePage from './pages/HomePage';
 import PvcWindowsPage from './pages/PvcWindowsPage';
 import AluminumWindowsPage from './pages/AluminumWindowsPage';
+import WoodAluminumWindowsPage from './pages/WoodAluminumWindowsPage';
+import DoorsPage from './pages/DoorsPage';
+import MosquitoNetsPage from './pages/MosquitoNetsPage';
+
+import SlidingSystemsPage from './pages/SlidingSystemsPage';
+import OutdoorPage from './pages/OutdoorPage';
+import AboutPage from './pages/AboutPage';
 
 function App() {
   useEffect(() => {
@@ -40,6 +47,12 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/finestre-pvc" element={<PvcWindowsPage />} />
           <Route path="/finestre-alluminio" element={<AluminumWindowsPage />} />
+          <Route path="/finestre-legno-alluminio" element={<WoodAluminumWindowsPage />} />
+          <Route path="/sistemi-scorrevoli" element={<SlidingSystemsPage />} />
+          <Route path="/porte" element={<DoorsPage />} />
+          <Route path="/zanzariere" element={<MosquitoNetsPage />} />
+          <Route path="/outdoor" element={<OutdoorPage />} />
+          <Route path="/chi-siamo" element={<AboutPage />} />
         </Routes>
       </Router>
     </HelmetProvider>
