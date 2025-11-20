@@ -31,9 +31,8 @@ const Header = () => {
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold tracking-tighter">
-          <span className={isScrolled || location.pathname !== '/' ? 'text-slate-900' : 'text-white'}>GICALL</span>
-          <span className="text-amber-500">.</span>
+        <Link to="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
+          <img src="/Logo-Gicall.png" alt="GICALL" className="h-12 w-auto" />
         </Link>
 
         {/* Desktop Nav */}
