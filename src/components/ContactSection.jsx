@@ -56,8 +56,7 @@ const ContactSection = () => {
                 <div className="absolute inset-0 bg-slate-900/80"></div>
             </div>
 
-            {/* Dots Texture */}
-            <div className="absolute inset-0 z-0 opacity-20 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:16px_16px]"></div>
+
 
             <div className="container relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">

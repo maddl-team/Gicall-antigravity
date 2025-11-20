@@ -8,10 +8,10 @@ const services = [
         title: 'Finestre e Infissi',
         description: 'La luce è vita, ma l\'isolamento è comfort. I nostri infissi in PVC, Alluminio e Legno/Alluminio sono progettati per offrire le migliori prestazioni di trasmittanza termica sul mercato.',
         icon: <FiMaximize className="w-8 h-8" />,
-        image: 'https://images.unsplash.com/photo-1503708928676-1ec796b22e33?q=80&w=800&auto=format&fit=crop',
+        image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=800&auto=format&fit=crop',
         links: [
             { text: 'Scopri Finestre in PVC', url: '/finestre-pvc' },
-            { text: 'Scopri Finestre in Alluminio', url: '#' },
+            { text: 'Scopri Finestre in Alluminio', url: '/finestre-alluminio' },
             { text: 'Scopri Legno/Alluminio', url: '#' }
         ]
     },
@@ -20,7 +20,7 @@ const services = [
         title: 'Porte Interne e Blindate',
         description: 'Sicurezza e stile devono viaggiare insieme. Le nostre porte blindate offrono i più alti standard di classe antieffrazione senza rinunciare all\'eleganza.',
         icon: <FiShield className="w-8 h-8" />,
-        image: 'https://images.unsplash.com/photo-1517646331032-9e8563c523a1?q=80&w=800&auto=format&fit=crop',
+        image: 'https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=800&auto=format&fit=crop',
         links: []
     },
     {
@@ -28,7 +28,7 @@ const services = [
         title: 'Outdoor, Zanzariere e Complementi',
         description: 'Vivi i tuoi spazi esterni e proteggi quelli interni. Grate, Persiane, Zanzariere, Tende da Sole e Pergole per trasformare il tuo giardino o terrazzo.',
         icon: <FiSun className="w-8 h-8" />,
-        image: 'https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=800&auto=format&fit=crop',
+        image: 'https://images.unsplash.com/photo-1595846519845-68e298c2edd8?q=80&w=800&auto=format&fit=crop',
         links: []
     }
 ];
