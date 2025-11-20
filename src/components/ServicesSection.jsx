@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiMaximize, FiShield, FiSun } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const services = [
     {
@@ -8,7 +9,11 @@ const services = [
         description: 'La luce è vita, ma l\'isolamento è comfort. I nostri infissi in PVC, Alluminio e Legno/Alluminio sono progettati per offrire le migliori prestazioni di trasmittanza termica sul mercato.',
         icon: <FiMaximize className="w-8 h-8" />,
         image: 'https://images.unsplash.com/photo-1503708928676-1ec796b22e33?q=80&w=800&auto=format&fit=crop',
-        links: ['Scopri Finestre in PVC', 'Scopri Finestre in Alluminio', 'Scopri Legno/Alluminio']
+        links: [
+            { text: 'Scopri Finestre in PVC', url: '/finestre-pvc' },
+            { text: 'Scopri Finestre in Alluminio', url: '#' },
+            { text: 'Scopri Legno/Alluminio', url: '#' }
+        ]
     },
     {
         id: 2,
@@ -84,9 +89,15 @@ const ServicesSection = () => {
                                 {service.links.length > 0 ? (
                                     <div className="space-y-2 mt-auto">
                                         {service.links.map((link, i) => (
-                                            <a key={i} href="#" className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
-                                                {link} →
-                                            </a>
+                                            link.url.startsWith('/') ? (
+                                                <Link key={i} to={link.url} className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
+                                                    {link.text} →
+                                                </Link>
+                                            ) : (
+                                                <a key={i} href={link.url} className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
+                                                    {link.text} →
+                                                </a>
+                                            )
                                         ))}
                                     </div>
                                 ) : (

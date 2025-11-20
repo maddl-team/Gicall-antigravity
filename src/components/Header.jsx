@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX, FiPhone } from 'react-icons/fi';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,24 +17,24 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#' },
-    { name: 'Perché Gicall', href: '#usp' },
-    { name: 'Prodotti', href: '#prodotti' },
-    { name: 'Metodo', href: '#metodo' },
-    { name: 'Showroom', href: '#showroom' },
+    { name: 'Home', href: '/' },
+    { name: 'Perché Gicall', href: '/#usp' },
+    { name: 'Prodotti', href: '/#prodotti' },
+    { name: 'Metodo', href: '/#metodo' },
+    { name: 'Showroom', href: '/#showroom' },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || location.pathname !== '/' ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
         }`}
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold tracking-tighter">
-          <span className={isScrolled ? 'text-slate-900' : 'text-white'}>GICALL</span>
+        <Link to="/" className="text-2xl font-bold tracking-tighter">
+          <span className={isScrolled || location.pathname !== '/' ? 'text-slate-900' : 'text-white'}>GICALL</span>
           <span className="text-amber-500">.</span>
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8">
@@ -40,7 +42,7 @@ const Header = () => {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-medium transition-colors hover:text-amber-500 ${isScrolled ? 'text-slate-700' : 'text-slate-100'
+              className={`text-sm font-medium transition-colors hover:text-amber-500 ${isScrolled || location.pathname !== '/' ? 'text-slate-700' : 'text-slate-100'
                 }`}
             >
               {link.name}
