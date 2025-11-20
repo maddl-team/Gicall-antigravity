@@ -3,7 +3,7 @@ import { FiFacebook, FiInstagram, FiLinkedin, FiMapPin, FiPhone, FiMail } from '
 const Footer = () => {
     return (
         <footer className="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
-            <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div className="container grid grid-cols-1 md:grid-cols-4 gap-8 mb-20">
                 {/* Brand */}
                 <div className="col-span-1 md:col-span-1">
                     <a href="#" className="text-2xl font-bold text-white tracking-tighter mb-4 block">
@@ -62,7 +62,11 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="container pt-8 border-t border-slate-800 text-center text-xs">
+            <div className="container">
+                <div className="border-t border-slate-800 my-8"></div>
+            </div>
+
+            <div className="container text-center text-xs pb-8">
                 <p>&copy; {new Date().getFullYear()} Gicall S.r.l.s. - P.IVA 01234567890 - Privacy Policy - Cookie Policy</p>
             </div>
         </footer>
