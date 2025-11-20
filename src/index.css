@@ -10,9 +10,9 @@
   /* Deep Blue / Slate 900 */
   --color-secondary: #334155;
   /* Slate 700 */
-  --color-accent: #f59e0b;
-  /* Amber 500 - for CTAs */
-  --color-accent-hover: #d97706;
+  --color-accent: #ff0000;
+  /* Gicall Red */
+  --color-accent-hover: #cc0000;
 
   /* Backgrounds */
   --bg-white: #ffffff;

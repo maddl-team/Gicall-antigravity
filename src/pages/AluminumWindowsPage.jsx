@@ -221,7 +221,7 @@ const AluminumWindowsPage = () => {
                 <section className="py-16 bg-slate-900 text-white">
                     <div className="container">
                         <div className="max-w-4xl mx-auto text-center">
-                            <h3 className="text-2xl md:text-3xl font-bold mb-8">Quando consigliamo l'Alluminio?</h3>
+                            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-white">Quando consigliamo l'Alluminio?</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
                                 <div className="flex items-center gap-4 p-4 bg-slate-800 rounded-lg">
                                     <div className="w-3 h-3 rounded-full bg-amber-500"></div>
@@ -276,17 +276,17 @@ const AluminumWindowsPage = () => {
                 </section>
 
                 {/* CTA Final */}
-                <section className="py-20 bg-amber-500">
+                <section className="py-20 bg-slate-50">
                     <div className="container text-center">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+                        <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
                             Scegli l'eleganza dell'Alluminio GICALL
                         </h2>
-                        <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
+                        <p className="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
                             Vieni a vedere la differenza nei nostri showroom. Tocca con mano la solidità dei profili e la fluidità delle aperture.
                         </p>
                         <a
                             href="#contact"
-                            className="inline-block bg-white text-amber-600 font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:bg-slate-100 transition-colors duration-300"
+                            className="inline-block bg-amber-500 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg hover:bg-amber-600 transition-colors duration-300"
                         >
                             Prenota un Appuntamento
                         </a>

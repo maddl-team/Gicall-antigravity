@@ -206,21 +206,21 @@ const PvcWindowsPage = () => {
                 </section>
 
                 {/* SECTION 4: RISPARMIO E BONUS */}
-                <section className="py-20 bg-amber-500 text-white">
+                <section className="py-20 bg-slate-50 text-slate-900">
                     <div className="container">
                         <div className="max-w-4xl mx-auto text-center">
-                            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">
                                 Un investimento che si ripaga da solo
                             </h2>
-                            <p className="text-xl mb-8 opacity-90 leading-relaxed">
-                                Sostituire i vecchi infissi con le nuove finestre in PVC GICALL è un investimento intelligente. Grazie all'elevata efficienza energetica, i nostri prodotti rientrano pienamente nei parametri per accedere agli <span className="font-bold bg-white/20 px-2 py-1 rounded">Incentivi Statali (Ecobonus / Bonus Casa)</span>.
+                            <p className="text-xl mb-8 text-slate-600 leading-relaxed">
+                                Sostituire i vecchi infissi con le nuove finestre in PVC GICALL è un investimento intelligente. Grazie all'elevata efficienza energetica, i nostri prodotti rientrano pienamente nei parametri per accedere agli <span className="font-bold bg-amber-100 text-amber-700 px-2 py-1 rounded">Incentivi Statali (Ecobonus / Bonus Casa)</span>.
                             </p>
-                            <p className="mb-10 opacity-90">
+                            <p className="mb-10 text-slate-600">
                                 Il nostro ufficio amministrativo ti supporterà nella gestione delle pratiche per ottenere le detrazioni fiscali previste dalla legge. Risparmi subito sull'acquisto e risparmi ogni mese sulle bollette.
                             </p>
                             <a
                                 href="#contatti"
-                                className="inline-flex items-center gap-2 bg-white text-amber-600 px-8 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-lg"
+                                className="inline-flex items-center gap-2 bg-amber-500 text-white hover:bg-amber-600 px-8 py-4 rounded-full font-bold text-lg transition-transform hover:scale-105 shadow-lg"
                             >
                                 Richiedi Consulenza Fiscale Gratuita <FiArrowRight />
                             </a>
@@ -265,7 +265,7 @@ const PvcWindowsPage = () => {
                 {/* SECTION 6: CTA FINALE */}
                 <section className="py-20 bg-slate-900 text-white text-center">
                     <div className="container max-w-3xl">
-                        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                        <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
                             Passa all'Efficienza GICALL
                         </h2>
                         <p className="text-xl text-slate-300 mb-10">
