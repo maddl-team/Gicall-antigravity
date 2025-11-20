@@ -6,8 +6,8 @@
 
 :root {
   /* Brand Colors */
-  --color-primary: #0f172a;
-  /* Deep Blue / Slate 900 */
+  --color-primary: #191c25;
+  /* Deep Dark / Custom */
   --color-secondary: #334155;
   /* Slate 700 */
   --color-accent: #ff0000;
@@ -18,7 +18,7 @@
   --bg-white: #ffffff;
   --bg-light: #f8fafc;
   /* Slate 50 */
-  --bg-dark: #0f172a;
+  --bg-dark: #191c25;
 
   /* Text */
   --text-main: #1e293b;
