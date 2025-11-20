@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import USPSection from '../components/USPSection';
@@ -14,14 +13,13 @@ import Footer from '../components/Footer';
 const HomePage = () => {
     return (
         <>
-            <Helmet>
-                <title>GICALL | Produzione Infissi e Serramenti - Eccellenza 5 Stelle a Roma e Orvieto</title>
-                <meta
-                    name="description"
-                    content="Dal produttore a casa tua. Oltre 75 recensioni a 5 stelle confermano la qualità GICALL. Finestre PVC, alluminio, blindate e outdoor. Chiedi un preventivo fabbrica."
-                />
-                <meta name="keywords" content="Produzione infissi, Serramenti Roma, Serramenti Orvieto, Fabbrica infissi, Finestre PVC" />
-            </Helmet>
+            <title>GICALL | Produzione Infissi e Serramenti - Eccellenza 5 Stelle a Roma e Orvieto</title>
+            <meta
+                name="description"
+                content="Dal produttore a casa tua. Oltre 75 recensioni a 5 stelle confermano la qualità GICALL. Finestre PVC, alluminio, blindate e outdoor. Chiedi un preventivo fabbrica."
+            />
+            <meta name="keywords" content="Produzione infissi, Serramenti Roma, Serramenti Orvieto, Fabbrica infissi, Finestre PVC" />
+
 
             <div className="flex flex-col min-h-screen">
                 <Header />

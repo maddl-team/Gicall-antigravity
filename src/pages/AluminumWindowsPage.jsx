@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Helmet } from 'react-helmet-async';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ContactSection from '../components/ContactSection';
@@ -37,11 +36,11 @@ const AluminumWindowsPage = () => {
 
     return (
         <div className="font-sans text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900">
-            <Helmet>
+            
                 <title>Finestre in Alluminio a Taglio Termico | Design e Isolamento - GICALL</title>
                 <meta name="description" content="Infissi in alluminio a taglio termico di produzione propria. Profili minimali, grandi vetrate e massimo isolamento termico. Scopri le soluzioni GICALL a Roma e Orvieto." />
                 <meta name="keywords" content="Finestre Alluminio Taglio Termico, Infissi Alluminio Roma, Serramenti Alluminio, Grandi Vetrate, Design Minimal" />
-            </Helmet>
+            
 
             <Header />
 
@@ -86,7 +85,7 @@ const AluminumWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                             >
                                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">
@@ -109,7 +108,7 @@ const AluminumWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
@@ -141,7 +140,7 @@ const AluminumWindowsPage = () => {
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                     className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                                 >
@@ -161,7 +160,7 @@ const AluminumWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                                 className="order-2 lg:order-1 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
@@ -174,7 +173,7 @@ const AluminumWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                                 className="order-1 lg:order-2"
                             >

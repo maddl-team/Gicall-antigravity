@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { FiCheck, FiChevronDown, FiArrowRight } from 'react-icons/fi';
 import Header from '../components/Header';
@@ -9,14 +8,14 @@ import ContactSection from '../components/ContactSection';
 const PvcWindowsPage = () => {
     return (
         <>
-            <Helmet>
+            
                 <title>Finestre in PVC Roma e Orvieto | Produzione su Misura - GICALL</title>
                 <meta
                     name="description"
                     content="Produzione diretta finestre in PVC ad alto isolamento termico. Prezzi di fabbrica, profili Classe A e posa certificata. Scopri le offerte a Roma e Orvieto."
                 />
                 <meta name="keywords" content="Finestre in PVC Roma, Produzione Infissi PVC, Serramenti PVC, Fabbrica Infissi Roma" />
-            </Helmet>
+            
 
             <Header />
 
@@ -65,7 +64,7 @@ const PvcWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                             >
                                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
@@ -98,7 +97,7 @@ const PvcWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6, delay: 0.2 }}
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
@@ -140,7 +139,7 @@ const PvcWindowsPage = () => {
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     transition={{ duration: 0.5, delay: index * 0.1 }}
                                     className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow border border-slate-100"
                                 >
@@ -162,7 +161,7 @@ const PvcWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                                 className="order-2 lg:order-1"
                             >
@@ -175,7 +174,7 @@ const PvcWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 transition={{ duration: 0.6 }}
                                 className="order-1 lg:order-2"
                             >
@@ -246,7 +245,7 @@ const PvcWindowsPage = () => {
                                     key={index}
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     transition={{ delay: index * 0.1 }}
                                     className="bg-white p-6 rounded-xl shadow-sm border border-slate-100"
                                 >

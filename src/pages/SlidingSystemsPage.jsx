@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { FiMaximize, FiSun, FiLayout, FiCheck } from 'react-icons/fi';
 import Header from '../components/Header';
@@ -8,11 +7,11 @@ import ContactSection from '../components/ContactSection';
 const SlidingSystemsPage = () => {
     return (
         <>
-            <Helmet>
+            
                 <title>Sistemi Scorrevoli e Grandi Vetrate Roma | GICALL</title>
                 <meta name="description" content="Sistemi scorrevoli in alluminio e PVC per grandi vetrate. Alzanti scorrevoli e scorrevoli minimali per inondare di luce la tua casa. Showroom a Roma e Orvieto." />
                 <meta name="keywords" content="Sistemi Scorrevoli Roma, Grandi Vetrate, Alzante Scorrevole, Infissi Scorrevoli, Gicall" />
-            </Helmet>
+            
 
             <Header />
 
@@ -60,7 +59,7 @@ const SlidingSystemsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                             >
                                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                                     La Luce come Protagonista
@@ -89,7 +88,7 @@ const SlidingSystemsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
@@ -122,7 +121,7 @@ const SlidingSystemsPage = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: 30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     className="order-1 lg:order-2"
                                 >
                                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
@@ -145,7 +144,7 @@ const SlidingSystemsPage = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: -30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                 >
                                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
                                         Scorrevole Parallelo e in Linea

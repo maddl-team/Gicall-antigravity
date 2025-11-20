@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+
 import { motion } from 'framer-motion';
 import { FiShield, FiWind, FiMaximize, FiCheck, FiSun } from 'react-icons/fi';
 import Header from '../components/Header';
@@ -8,11 +8,9 @@ import ContactSection from '../components/ContactSection';
 const MosquitoNetsPage = () => {
     return (
         <>
-            <Helmet>
-                <title>Zanzariere su Misura Roma | Scorrevoli, Plissé e Fisse - GICALL</title>
-                <meta name="description" content="Zanzariere su misura di alta qualità. Proteggi la tua casa da insetti e pollini con le nostre soluzioni innovative. Produzione e installazione a Roma e Orvieto." />
-                <meta name="keywords" content="Zanzariere Roma, Zanzariere su misura, Zanzariere Plissé, Zanzariere Scorrevoli, Gicall" />
-            </Helmet>
+            <title>Zanzariere su Misura Roma | Scorrevoli, Plissé e Fisse - GICALL</title>
+            <meta name="description" content="Zanzariere su misura di alta qualità. Proteggi la tua casa da insetti e pollini con le nostre soluzioni innovative. Produzione e installazione a Roma e Orvieto." />
+            <meta name="keywords" content="Zanzariere Roma, Zanzariere su misura, Zanzariere Plissé, Zanzariere Scorrevoli, Gicall" />
 
             <Header />
 
@@ -87,7 +85,7 @@ const MosquitoNetsPage = () => {
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     transition={{ delay: index * 0.1 }}
                                     className="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-lg transition-shadow"
                                 >
@@ -115,7 +113,7 @@ const MosquitoNetsPage = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: -30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                 >
                                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
                                         Avvolgente Verticale (a Molla)
@@ -151,7 +149,7 @@ const MosquitoNetsPage = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: 30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     className="order-1 lg:order-2"
                                 >
                                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
@@ -174,7 +172,7 @@ const MosquitoNetsPage = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: -30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                 >
                                     <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-4">
                                         Pannelli Fissi e Scorrevoli

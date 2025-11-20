@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { FiUsers, FiAward, FiMapPin, FiCheckCircle } from 'react-icons/fi';
 import Header from '../components/Header';
@@ -8,11 +7,11 @@ import ContactSection from '../components/ContactSection';
 const AboutPage = () => {
     return (
         <>
-            <Helmet>
+            
                 <title>Chi Siamo | GICALL - Serramenti a Roma e Orvieto</title>
                 <meta name="description" content="Scopri la storia di GICALL. Da oltre 20 anni leader nella produzione e installazione di infissi in PVC e alluminio. Showroom a Roma e Orvieto." />
                 <meta name="keywords" content="Chi Siamo Gicall, Storia Gicall, Serramenti Roma, Showroom Infissi, Team Gicall" />
-            </Helmet>
+            
 
             <Header />
 
@@ -52,7 +51,7 @@ const AboutPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                             >
                                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                                     Più di semplici venditori
@@ -78,7 +77,7 @@ const AboutPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
@@ -122,7 +121,7 @@ const AboutPage = () => {
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     transition={{ delay: index * 0.1 }}
                                     className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-shadow"
                                 >

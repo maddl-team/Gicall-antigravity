@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+
 import { motion } from 'framer-motion';
 import { FiShield, FiLock, FiHome, FiCheck, FiArrowRight } from 'react-icons/fi';
 import Header from '../components/Header';
@@ -8,11 +8,9 @@ import ContactSection from '../components/ContactSection';
 const DoorsPage = () => {
     return (
         <>
-            <Helmet>
-                <title>Porte Blindate e Interne Roma | Sicurezza e Design - GICALL</title>
-                <meta name="description" content="Porte blindate di sicurezza Classe 3 e 4 e porte interne di design. Produzione e installazione a Roma e Orvieto. Scegli la sicurezza che arreda." />
-                <meta name="keywords" content="Porte Blindate Roma, Porte Interne, Porte Sicurezza, Infissi Roma, Gicall" />
-            </Helmet>
+            <title>Porte Blindate e Interne Roma | Sicurezza e Design - GICALL</title>
+            <meta name="description" content="Porte blindate di sicurezza Classe 3 e 4 e porte interne di design. Produzione e installazione a Roma e Orvieto. Scegli la sicurezza che arreda." />
+            <meta name="keywords" content="Porte Blindate Roma, Porte Interne, Porte Sicurezza, Infissi Roma, Gicall" />
 
             <Header />
 
@@ -66,7 +64,7 @@ const DoorsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                             >
                                 <div className="flex items-center gap-3 mb-4">
                                     <FiShield className="text-4xl text-amber-500" />
@@ -109,7 +107,7 @@ const DoorsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className="relative h-[600px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
@@ -161,7 +159,7 @@ const DoorsPage = () => {
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     transition={{ delay: index * 0.1 }}
                                     className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
                                 >

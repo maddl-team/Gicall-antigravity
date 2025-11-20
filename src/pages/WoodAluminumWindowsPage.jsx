@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { FiCheck, FiArrowRight, FiShield, FiSun, FiMaximize } from 'react-icons/fi';
 import Header from '../components/Header';
@@ -8,11 +7,11 @@ import ContactSection from '../components/ContactSection';
 const WoodAluminumWindowsPage = () => {
     return (
         <>
-            <Helmet>
+            
                 <title>Finestre in Legno Alluminio | La Sintesi Perfetta tra Natura e Tecnologia - GICALL</title>
                 <meta name="description" content="Il calore del legno all'interno, la resistenza dell'alluminio all'esterno. Infissi di pregio a manutenzione zero. Produzione su misura a Roma e Orvieto." />
                 <meta name="keywords" content="Finestre Legno Alluminio Roma, Infissi Legno Alluminio, Serramenti misti, Infissi pregio Roma" />
-            </Helmet>
+            
 
             <Header />
 
@@ -63,7 +62,7 @@ const WoodAluminumWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                             >
                                 <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
                                     Due materiali, un unico capolavoro.
@@ -103,7 +102,7 @@ const WoodAluminumWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className="relative"
                             >
                                 <div className="absolute inset-0 bg-amber-500/10 rounded-3xl transform rotate-3"></div>
@@ -156,7 +155,7 @@ const WoodAluminumWindowsPage = () => {
                                     key={index}
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     transition={{ delay: index * 0.1 }}
                                     className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-slate-100"
                                 >
@@ -180,7 +179,7 @@ const WoodAluminumWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                             >
                                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                                     Essenze e Finiture: Crea il tuo stile.
@@ -223,7 +222,7 @@ const WoodAluminumWindowsPage = () => {
                             <motion.div
                                 initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.3 }}
                                 className="relative h-[500px] rounded-2xl overflow-hidden"
                             >
                                 <img

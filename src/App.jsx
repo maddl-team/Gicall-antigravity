@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
-import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Lenis from 'lenis';
+import ScrollToTop from './components/ScrollToTop';
 import HomePage from './pages/HomePage';
 import PvcWindowsPage from './pages/PvcWindowsPage';
 import AluminumWindowsPage from './pages/AluminumWindowsPage';
@@ -41,21 +41,20 @@ function App() {
   }, []);
 
   return (
-    <HelmetProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/finestre-pvc" element={<PvcWindowsPage />} />
-          <Route path="/finestre-alluminio" element={<AluminumWindowsPage />} />
-          <Route path="/finestre-legno-alluminio" element={<WoodAluminumWindowsPage />} />
-          <Route path="/sistemi-scorrevoli" element={<SlidingSystemsPage />} />
-          <Route path="/porte" element={<DoorsPage />} />
-          <Route path="/zanzariere" element={<MosquitoNetsPage />} />
-          <Route path="/outdoor" element={<OutdoorPage />} />
-          <Route path="/chi-siamo" element={<AboutPage />} />
-        </Routes>
-      </Router>
-    </HelmetProvider>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/finestre-pvc" element={<PvcWindowsPage />} />
+        <Route path="/finestre-alluminio" element={<AluminumWindowsPage />} />
+        <Route path="/finestre-legno-alluminio" element={<WoodAluminumWindowsPage />} />
+        <Route path="/sistemi-scorrevoli" element={<SlidingSystemsPage />} />
+        <Route path="/porte" element={<DoorsPage />} />
+        <Route path="/zanzariere" element={<MosquitoNetsPage />} />
+        <Route path="/outdoor" element={<OutdoorPage />} />
+        <Route path="/chi-siamo" element={<AboutPage />} />
+      </Routes>
+    </Router>
   );
 }
 

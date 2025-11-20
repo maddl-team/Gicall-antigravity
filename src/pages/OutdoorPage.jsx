@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { FiSun, FiUmbrella, FiWind, FiCheck } from 'react-icons/fi';
 import Header from '../components/Header';
@@ -8,11 +7,11 @@ import ContactSection from '../components/ContactSection';
 const OutdoorPage = () => {
     return (
         <>
-            <Helmet>
+            
                 <title>Pergotende e Tende da Sole Roma | Outdoor Living - GICALL</title>
                 <meta name="description" content="Vivi i tuoi spazi esterni tutto l'anno. Pergotende, pergole bioclimatiche e tende da sole su misura. Progettazione e installazione a Roma e Orvieto." />
                 <meta name="keywords" content="Pergotende Roma, Tende da Sole, Pergole Bioclimatiche, Outdoor Living, Gicall" />
-            </Helmet>
+            
 
             <Header />
 
@@ -74,7 +73,7 @@ const OutdoorPage = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: -30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                 >
                                     <div className="flex items-center gap-3 mb-4">
                                         <FiSun className="text-4xl text-amber-500" />
@@ -115,7 +114,7 @@ const OutdoorPage = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: 30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                     className="order-1 lg:order-2"
                                 >
                                     <div className="flex items-center gap-3 mb-4">
@@ -141,7 +140,7 @@ const OutdoorPage = () => {
                                 <motion.div
                                     initial={{ opacity: 0, x: -30 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, amount: 0.3 }}
                                 >
                                     <div className="flex items-center gap-3 mb-4">
                                         <FiWind className="text-4xl text-amber-500" />
