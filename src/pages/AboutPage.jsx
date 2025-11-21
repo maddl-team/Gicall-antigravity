@@ -7,11 +7,11 @@ import ContactSection from '../components/ContactSection';
 const AboutPage = () => {
     return (
         <>
-            
-                <title>Chi Siamo | GICALL - Serramenti a Roma e Orvieto</title>
-                <meta name="description" content="Scopri la storia di GICALL. Da oltre 20 anni leader nella produzione e installazione di infissi in PVC e alluminio. Showroom a Roma e Orvieto." />
-                <meta name="keywords" content="Chi Siamo Gicall, Storia Gicall, Serramenti Roma, Showroom Infissi, Team Gicall" />
-            
+
+            <title>Chi Siamo | GICALL - Serramenti a Roma e Orvieto</title>
+            <meta name="description" content="Scopri la storia di GICALL. Da oltre 20 anni leader nella produzione e installazione di infissi in PVC e alluminio. Showroom a Roma e Orvieto." />
+            <meta name="keywords" content="Chi Siamo Gicall, Storia Gicall, Serramenti Roma, Showroom Infissi, Team Gicall" />
+
 
             <Header />
 
@@ -30,7 +30,8 @@ const AboutPage = () => {
                     <div className="container relative z-10 text-center px-4 pt-20">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
-                            animate={{ opacity: 1, y: 0 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.8 }}
                             className="max-w-4xl mx-auto"
                         >

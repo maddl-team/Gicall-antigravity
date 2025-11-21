@@ -1,7 +1,8 @@
 import { useEffect, lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 import Lenis from 'lenis';
-import ScrollToTop from './components/ScrollToTop';
+import { PageTransition } from './components/PageTransition';
 
 // Lazy load all page components for better performance
 const HomePage = lazy(() => import('./pages/HomePage'));
@@ -13,6 +14,27 @@ const MosquitoNetsPage = lazy(() => import('./pages/MosquitoNetsPage'));
 const SlidingSystemsPage = lazy(() => import('./pages/SlidingSystemsPage'));
 const OutdoorPage = lazy(() => import('./pages/OutdoorPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
+
+// Wrapper component to use useLocation inside Router
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<PageTransition><HomePage /></PageTransition>} />
+        <Route path="/finestre-pvc" element={<PageTransition><PvcWindowsPage /></PageTransition>} />
+        <Route path="/finestre-alluminio" element={<PageTransition><AluminumWindowsPage /></PageTransition>} />
+        <Route path="/finestre-legno-alluminio" element={<PageTransition><WoodAluminumWindowsPage /></PageTransition>} />
+        <Route path="/sistemi-scorrevoli" element={<PageTransition><SlidingSystemsPage /></PageTransition>} />
+        <Route path="/porte" element={<PageTransition><DoorsPage /></PageTransition>} />
+        <Route path="/zanzariere" element={<PageTransition><MosquitoNetsPage /></PageTransition>} />
+        <Route path="/outdoor" element={<PageTransition><OutdoorPage /></PageTransition>} />
+        <Route path="/chi-siamo" element={<PageTransition><AboutPage /></PageTransition>} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
 
 function App() {
   useEffect(() => {
@@ -43,14 +65,13 @@ function App() {
 
   return (
     <Router>
-      <ScrollToTop />
       <Suspense fallback={
         <div style={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
           minHeight: '100vh',
-          background: '#0a0a0a'
+          background: '#ffffff'
         }}>
           <div style={{
             width: '40px',
@@ -62,17 +83,7 @@ function App() {
           }} />
         </div>
       }>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/finestre-pvc" element={<PvcWindowsPage />} />
-          <Route path="/finestre-alluminio" element={<AluminumWindowsPage />} />
-          <Route path="/finestre-legno-alluminio" element={<WoodAluminumWindowsPage />} />
-          <Route path="/sistemi-scorrevoli" element={<SlidingSystemsPage />} />
-          <Route path="/porte" element={<DoorsPage />} />
-          <Route path="/zanzariere" element={<MosquitoNetsPage />} />
-          <Route path="/outdoor" element={<OutdoorPage />} />
-          <Route path="/chi-siamo" element={<AboutPage />} />
-        </Routes>
+        <AnimatedRoutes />
       </Suspense>
     </Router>
   );

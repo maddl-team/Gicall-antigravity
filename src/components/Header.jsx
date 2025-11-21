@@ -65,14 +65,23 @@ const Header = () => {
               onMouseEnter={() => link.subLinks && handleDropdownEnter(link.name)}
               onMouseLeave={handleDropdownLeave}
             >
-              <a
-                href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-amber-500 flex items-center gap-1 ${isScrolled || location.pathname !== '/' ? 'text-slate-700' : 'text-slate-100'
-                  }`}
-              >
-                {link.name}
-                {link.subLinks && <FiChevronDown />}
-              </a>
+              {link.subLinks ? (
+                <span
+                  className={`text-sm font-medium transition-colors hover:text-amber-500 flex items-center gap-1 cursor-pointer ${isScrolled || location.pathname !== '/' ? 'text-slate-700' : 'text-slate-100'
+                    }`}
+                >
+                  {link.name}
+                  <FiChevronDown />
+                </span>
+              ) : (
+                <Link
+                  to={link.href}
+                  className={`text-sm font-medium transition-colors hover:text-amber-500 flex items-center gap-1 ${isScrolled || location.pathname !== '/' ? 'text-slate-700' : 'text-slate-100'
+                    }`}
+                >
+                  {link.name}
+                </Link>
+              )}
 
               {/* Dropdown */}
               <AnimatePresence>
@@ -146,13 +155,13 @@ const Header = () => {
                       </div>
                     </div>
                   ) : (
-                    <a
-                      href={link.href}
+                    <Link
+                      to={link.href}
                       className="text-slate-700 font-medium hover:text-amber-500 block"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   )}
                 </div>
               ))}

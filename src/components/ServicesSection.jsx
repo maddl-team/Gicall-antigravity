@@ -1,6 +1,7 @@
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { FiMaximize, FiShield, FiSun } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import { useRef } from 'react';
 
 const services = [
     {
@@ -33,6 +34,61 @@ const services = [
     }
 ];
 
+const ServiceCard = ({ service, index }) => {
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true, amount: 0.3 });
+
+    return (
+        <motion.div
+            ref={ref}
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ delay: index * 0.1, duration: 0.5 }}
+            className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col"
+        >
+            <div className="relative h-64 overflow-hidden">
+                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors z-10" />
+                <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur p-2 rounded-lg text-amber-500">
+                    {service.icon}
+                </div>
+            </div>
+            <div className="p-8 flex-grow flex flex-col">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-amber-600 transition-colors">
+                    {service.title}
+                </h3>
+                <p className="text-slate-600 mb-6 flex-grow leading-relaxed">
+                    {service.description}
+                </p>
+
+                {service.links.length > 0 ? (
+                    <div className="space-y-2 mt-auto">
+                        {service.links.map((link, i) => (
+                            link.url.startsWith('/') ? (
+                                <Link key={i} to={link.url} className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
+                                    {link.text} →
+                                </Link>
+                            ) : (
+                                <a key={i} href={link.url} className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
+                                    {link.text} →
+                                </a>
+                            )
+                        ))}
+                    </div>
+                ) : (
+                    <a href="#" className="inline-flex items-center text-sm font-semibold text-amber-600 hover:text-amber-700 mt-auto">
+                        Scopri di più <span className="ml-1">→</span>
+                    </a>
+                )}
+            </div>
+        </motion.div>
+    );
+};
+
 const ServicesSection = () => {
     return (
         <section id="prodotti" className="section bg-slate-50">
@@ -59,54 +115,7 @@ const ServicesSection = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <motion.div
-                            key={service.id}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
-                        >
-                            <div className="relative h-64 overflow-hidden">
-                                <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors z-10" />
-                                <img
-                                    src={service.image}
-                                    alt={service.title}
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
-                                />
-                                <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur p-2 rounded-lg text-amber-500">
-                                    {service.icon}
-                                </div>
-                            </div>
-                            <div className="p-8 flex-grow flex flex-col">
-                                <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-amber-600 transition-colors">
-                                    {service.title}
-                                </h3>
-                                <p className="text-slate-600 mb-6 flex-grow leading-relaxed">
-                                    {service.description}
-                                </p>
-
-                                {service.links.length > 0 ? (
-                                    <div className="space-y-2 mt-auto">
-                                        {service.links.map((link, i) => (
-                                            link.url.startsWith('/') ? (
-                                                <Link key={i} to={link.url} className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
-                                                    {link.text} →
-                                                </Link>
-                                            ) : (
-                                                <a key={i} href={link.url} className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
-                                                    {link.text} →
-                                                </a>
-                                            )
-                                        ))}
-                                    </div>
-                                ) : (
-                                    <a href="#" className="inline-flex items-center text-sm font-semibold text-amber-600 hover:text-amber-700 mt-auto">
-                                        Scopri di più <span className="ml-1">→</span>
-                                    </a>
-                                )}
-                            </div>
-                        </motion.div>
+                        <ServiceCard key={service.id} service={service} index={index} />
                     ))}
                 </div>
             </div>
