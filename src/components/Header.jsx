@@ -63,7 +63,9 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || location.pathname !== '/' ? 'bg-white shadow-md py-4' : 'bg-transparent py-6'
+      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${location.pathname === '/' && !isScrolled
+          ? 'bg-transparent py-6'
+          : 'bg-white shadow-md py-4'
         }`}
     >
       <div className="container flex items-center justify-between">
