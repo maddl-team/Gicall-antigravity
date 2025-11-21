@@ -49,7 +49,7 @@ const ContactSection = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2670&auto=format&fit=crop"
+                    src="/images/background_contactform_gicall.webp"
                     alt="Background"
                     className="w-full h-full object-cover opacity-10"
                 />

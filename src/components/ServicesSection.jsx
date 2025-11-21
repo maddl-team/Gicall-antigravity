@@ -9,7 +9,7 @@ const services = [
         title: 'Finestre e Infissi',
         description: 'La luce è vita, ma l\'isolamento è comfort. I nostri infissi in PVC, Alluminio e Legno/Alluminio sono progettati per offrire le migliori prestazioni di trasmittanza termica sul mercato.',
         icon: <FiMaximize className="w-8 h-8" />,
-        image: 'https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=800&auto=format&fit=crop',
+        image: '/images/gicall_finestre_homepage.webp',
         links: [
             { text: 'Scopri Finestre in PVC', url: '/finestre-pvc' },
             { text: 'Scopri Finestre in Alluminio', url: '/finestre-alluminio' },
@@ -21,7 +21,7 @@ const services = [
         title: 'Porte Interne e Blindate',
         description: 'Sicurezza e stile devono viaggiare insieme. Le nostre porte blindate offrono i più alti standard di classe antieffrazione senza rinunciare all\'eleganza.',
         icon: <FiShield className="w-8 h-8" />,
-        image: 'https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?q=80&w=800&auto=format&fit=crop',
+        image: '/images/gicall_portoni_blindati_homepage.webp',
         links: []
     },
     {
@@ -29,7 +29,7 @@ const services = [
         title: 'Outdoor, Zanzariere e Complementi',
         description: 'Vivi i tuoi spazi esterni e proteggi quelli interni. Grate, Persiane, Zanzariere, Tende da Sole e Pergole per trasformare il tuo giardino o terrazzo.',
         icon: <FiSun className="w-8 h-8" />,
-        image: 'https://images.unsplash.com/photo-1595846519845-68e298c2edd8?q=80&w=800&auto=format&fit=crop',
+        image: '/images/gicall_outdoor_homepage.webp',
         links: []
     }
 ];

@@ -71,7 +71,7 @@ const USPSection = () => {
                     >
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                             <img
-                                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=1000&auto=format&fit=crop"
+                                src="/images/gicall_about_homepage.webp"
                                 alt="Produzione infissi in fabbrica"
                                 className="w-full h-full object-cover"
                             />
