@@ -9,11 +9,17 @@ const HomePage = lazy(() => import('./pages/HomePage'));
 const PvcWindowsPage = lazy(() => import('./pages/PvcWindowsPage'));
 const AluminumWindowsPage = lazy(() => import('./pages/AluminumWindowsPage'));
 const WoodAluminumWindowsPage = lazy(() => import('./pages/WoodAluminumWindowsPage'));
-const DoorsPage = lazy(() => import('./pages/DoorsPage'));
-const MosquitoNetsPage = lazy(() => import('./pages/MosquitoNetsPage'));
 const SlidingSystemsPage = lazy(() => import('./pages/SlidingSystemsPage'));
-const OutdoorPage = lazy(() => import('./pages/OutdoorPage'));
+const InteriorDoorsPage = lazy(() => import('./pages/InteriorDoorsPage'));
+const SecurityDoorsPage = lazy(() => import('./pages/SecurityDoorsPage'));
+const GratingsShuttersPage = lazy(() => import('./pages/GratingsShuttersPage'));
+const MosquitoNetsPage = lazy(() => import('./pages/MosquitoNetsPage'));
+const RollerShuttersPage = lazy(() => import('./pages/RollerShuttersPage'));
+const PergolasPage = lazy(() => import('./pages/PergolasPage'));
+const AwningsPage = lazy(() => import('./pages/AwningsPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const ContactsPage = lazy(() => import('./pages/ContactsPage'));
 
 // Wrapper component to use useLocation inside Router
 function AnimatedRoutes() {
@@ -27,9 +33,15 @@ function AnimatedRoutes() {
         <Route path="/finestre-alluminio" element={<PageTransition><AluminumWindowsPage /></PageTransition>} />
         <Route path="/finestre-legno-alluminio" element={<PageTransition><WoodAluminumWindowsPage /></PageTransition>} />
         <Route path="/sistemi-scorrevoli" element={<PageTransition><SlidingSystemsPage /></PageTransition>} />
-        <Route path="/porte" element={<PageTransition><DoorsPage /></PageTransition>} />
+        <Route path="/porte-interne" element={<PageTransition><InteriorDoorsPage /></PageTransition>} />
+        <Route path="/porte-blindate" element={<PageTransition><SecurityDoorsPage /></PageTransition>} />
+        <Route path="/grate-persiane" element={<PageTransition><GratingsShuttersPage /></PageTransition>} />
         <Route path="/zanzariere" element={<PageTransition><MosquitoNetsPage /></PageTransition>} />
-        <Route path="/outdoor" element={<PageTransition><OutdoorPage /></PageTransition>} />
+        <Route path="/avvolgibili" element={<PageTransition><RollerShuttersPage /></PageTransition>} />
+        <Route path="/pergole" element={<PageTransition><PergolasPage /></PageTransition>} />
+        <Route path="/tende-da-sole" element={<PageTransition><AwningsPage /></PageTransition>} />
+        <Route path="/servizi" element={<PageTransition><ServicesPage /></PageTransition>} />
+        <Route path="/contatti" element={<PageTransition><ContactsPage /></PageTransition>} />
         <Route path="/chi-siamo" element={<PageTransition><AboutPage /></PageTransition>} />
       </Routes>
     </AnimatePresence>

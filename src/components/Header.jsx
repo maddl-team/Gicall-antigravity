@@ -21,20 +21,36 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'Chi Siamo', href: '/chi-siamo' },
     {
-      name: 'Prodotti',
-      href: '/#prodotti',
+      name: 'Infissi & Serramenti',
+      href: '/#infissi',
       subLinks: [
         { name: 'Finestre in PVC', href: '/finestre-pvc' },
         { name: 'Finestre in Alluminio', href: '/finestre-alluminio' },
         { name: 'Legno Alluminio', href: '/finestre-legno-alluminio' },
         { name: 'Sistemi Scorrevoli', href: '/sistemi-scorrevoli' },
-        { name: 'Porte Interne e Blindate', href: '/porte' },
-        { name: 'Zanzariere', href: '/zanzariere' },
-        { name: 'Outdoor (Tende e Pergole)', href: '/outdoor' },
       ]
     },
-    { name: 'Metodo', href: '/#metodo' },
-    { name: 'Showroom', href: '/#showroom' },
+    {
+      name: 'Porte & Sicurezza',
+      href: '/#porte-sicurezza',
+      subLinks: [
+        { name: 'Porte da Interno', href: '/porte-interne' },
+        { name: 'Porte Blindate', href: '/porte-blindate' },
+        { name: 'Grate e Persiane Blindate', href: '/grate-persiane' },
+      ]
+    },
+    {
+      name: 'Outdoor',
+      href: '/#outdoor',
+      subLinks: [
+        { name: 'Zanzariere', href: '/zanzariere' },
+        { name: 'Avvolgibili e Cassonetti', href: '/avvolgibili' },
+        { name: 'Tende da Sole', href: '/tende-da-sole' },
+        { name: 'Pergole & Arredo Giardino', href: '/pergole' },
+      ]
+    },
+    { name: 'Servizi', href: '/servizi' },
+    { name: 'Contatti', href: '/contatti' },
   ];
 
   const handleDropdownEnter = (name) => {

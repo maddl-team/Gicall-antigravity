@@ -1,0 +1,59 @@
+1. METADATI (SEO) 
+ Focus Keyword: Realizzazioni infissi Roma / Foto lavori serramenti / Case Study GICALL 
+ Tag Title: I Nostri Lavori | Realizzazioni Infissi e Serramenti - GICALL 
+ Meta Description: Guarda le foto dei nostri lavori a Roma, Orvieto e in tutto il Centro Italia. Case history di sostituzione finestre, porte blindate e pergole. Prima e dopo. 
+
+ 2. CONTENUTO DELLA PAGINA (Body) 
+ HERO SECTION 
+ (Visual: Un collage o uno slider delle 3 realizzazioni più belle ed eleganti fatte recentemente) 
+ [H1] I Nostri Lavori: Parliamo con i Fatti [Sottotitolo] Ogni casa ha una storia, ogni infisso una soluzione. Sfoglia le nostre realizzazioni e scopri come abbiamo trasformato le abitazioni dei nostri clienti a Roma, Orvieto e dintorni. 
+
+ SEZIONE 1: FILTRI E CATEGORIE 
+ (Funzionalità suggerita per lo sviluppatore: Inserire dei bottoni per filtrare i lavori) Filtra per: [Tutti] [Finestre in PVC] [Alluminio &amp; Design] [Outdoor &amp; Pergole] [Porte &amp; Sicurezza] 
+
+ SEZIONE 2: I CASE STUDIES (Esempi pratici di scrittura) 
+ (Qui sotto ti scrivo 3 esempi di come dovresti presentare i lavori. Quando caricherai le tue foto vere, segui questo schema: Titolo Geografico + Problema + Soluzione). 
+ CASO 1: RISTRUTTURAZIONE VILLA A ROMA NORD 
+ [H3] Sostituzione Infissi in Villa: Dal Legno vecchio al PVC Effetto Legno 
+ 📍 Dove: Roma (Zona Cassia) 
+ ⚠️ Il Problema: Il cliente lamentava forti spifferi, rumore dal traffico stradale e costi di riscaldamento elevati. I vecchi infissi in legno anni '80 erano ormai marciti. 
+ ✅ La Soluzione GICALL: Abbiamo installato finestre in PVC profilo 7 camere con triplo vetro. Per mantenere lo stile classico della villa, abbiamo scelto una finitura Effetto Rovere Dorato che replica perfettamente il legno originale, ma con zero manutenzione. Sostituzione completa anche dei cassonetti (coibentati) e avvolgibili motorizzati. 
+ 🏆 Il Risultato: Abbattimento acustico certificato e un risparmio in bolletta stimato del 35%. (Inserire Gallery: Foto Prima/Dopo) 
+ CASO 2: DESIGN MODERNO A ORVIETO 
+ [H3] Minimalismo e Luce: Grandi Vetrate Scorrevoli in Alluminio 
+ 📍 Dove: Orvieto (TR) 
+ ⚠️ Il Problema: Una nuova costruzione moderna richiedeva grandi aperture verso la vallata umbra. L'architetto voleva profili quasi invisibili. 
+ ✅ La Soluzione GICALL: Abbiamo progettato e realizzato Alzanti Scorrevoli in Alluminio a Taglio Termico con profili &quot;Slim&quot;. Vetri selettivi extrachiari per massimizzare la luce senza surriscaldare l'ambiente d'estate. Installazione con soglia a filo pavimento per continuità tra salotto e terrazzo. 
+ 🏆 Il Risultato: Una &quot;parete di vetro&quot; spettacolare che unisce interno ed esterno. (Inserire Gallery) 
+ CASO 3: OUTDOOR LIVING 
+ [H3] Creazione di una Veranda Bioclimatica 
+ 📍 Dove: Viterbo 
+ ⚠️ Il Problema: Un terrazzo molto soleggiato e inutilizzabile d'estate. Il cliente voleva una stanza in più per le cene. 
+ ✅ La Soluzione GICALL: Installazione di una Pergola Bioclimatica con lamelle orientabili motorizzate e illuminazione LED integrata. Chiusura laterale con vetrate panoramiche scorrevoli &quot;Tutto Vetro&quot;. 
+ 🏆 Il Risultato: Un ambiente vivibile 365 giorni l'anno, protetto dal sole e dalla pioggia. (Inserire Gallery) 
+
+ SEZIONE 3: LA GALLERIA &quot;PRIMA E DOPO&quot; 
+ (Questa sezione è potentissima per la conversione. Chiedi al web designer di mettere uno slider dove l'utente trascina la barretta per vedere il cambiamento) 
+ [H2] Il potere della trasformazione. Non ci limitiamo a cambiare una finestra, cambiamo il volto della tua casa. Guarda la differenza. 
+ [Foto Vecchio Cassonetto Marcio] VS [Foto Nuovo Cassonetto Coibentato Moderno] 
+ [Foto Vecchia Grata Arrugginita] VS [Foto Nuova Grata di Design] 
+
+ SEZIONE 4: MAPPA DEI LAVORI (SEO Locale) 
+ (Testo per rafforzare la presenza sul territorio) 
+ [H2] Dove lavoriamo? La nostra fabbrica serve direttamente tutto il Centro Italia. Le nostre squadre di installatori sono attive quotidianamente a: 
+ Roma e Provincia: (Roma Nord, Eur, Cassia, Flaminia, Capena, Fiano Romano, Monterotondo...) 
+ Umbria: (Orvieto, Terni, Perugia...) 
+ Viterbo e Bassa Toscana. 
+ Non importa dove sei, il metodo GICALL arriva da te. 
+
+ SEZIONE 5: CTA FINALE 
+ [H2] Vuoi un risultato come questo a casa tua? Se ti sono piaciuti i nostri lavori, immagina cosa possiamo fare per te. Portaci una foto della tua casa e progettiamo insieme la trasformazione. 
+ [Bottone] RICHIEDI UNA CONSULENZA GRATUITA 
+
+ 💡 CONSIGLIO D'ORO PER LA SEO IMMAGINI 
+ Quando il tuo sviluppatore caricherà le foto reali in questa pagina, NON deve chiamare i file IMG_2024.jpg o Whatsapp_Image.jpg . Deve rinominarli così, descrivendo cosa c'è nella foto: 
+ installazione-infissi-pvc-roma-villa.jpg 
+ scorrevole-alluminio-orvieto.jpg 
+ pergola-bioclimatica-viterbo.jpg 
+ porta-blindata-moderna-prima-dopo.jpg 
+ Questo permette alle tue foto di comparire su Google Immagini quando la gente cerca quei lavori, portando traffico qualificato al sito.
