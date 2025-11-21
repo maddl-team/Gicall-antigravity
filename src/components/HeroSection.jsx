@@ -6,8 +6,8 @@ const HeroSection = () => {
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
                 <img
-                    src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2700&auto=format&fit=crop"
-                    alt="Modern bright living room with large windows"
+                    src="/hero/gicall_hero_homepage.webp"
+                    alt="Gicall produzione infissi e serramenti"
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-slate-900/60"></div>
