@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 
 const partners = [
-    { name: 'Alias', url: 'https://www.gicall.it/wp-content/uploads/2023/07/gicall-loghi_0007_ALIAS_LOGOalta.jpg' },
-    { name: 'Alupergo', url: 'https://www.gicall.it/wp-content/uploads/2023/07/gicall-loghi_0006_alupergo-ban.jpg' },
-    { name: 'Cerbone', url: 'https://www.gicall.it/wp-content/uploads/2023/07/gicall-loghi_0005_cerbone-logo.jpg' },
-    { name: 'Partner', url: 'https://www.gicall.it/wp-content/uploads/2023/07/gicall-loghi_0001_unnamed.jpg' },
-    { name: 'Isomax', url: 'https://www.gicall.it/wp-content/uploads/2023/07/gicall-loghi_0004_ISOMAX.jpg' },
-    { name: 'OIP', url: 'https://www.gicall.it/wp-content/uploads/2023/07/gicall-loghi_0002_OIP.jpg' },
-    { name: 'Tecnotenda', url: 'https://www.gicall.it/wp-content/uploads/2023/07/gicall-loghi_0003_logo_tecnotenda.jpg' },
-    { name: 'Zero5', url: 'https://www.gicall.it/wp-content/uploads/2023/07/gicall-loghi_0000_Zero5_logo.jpg' },
-    { name: 'Wurth', url: 'https://www.gicall.it/wp-content/uploads/2023/07/wurth.jpg' }
+    { name: 'Alias', url: '/partners/alias.jpg' },
+    { name: 'Alupergo', url: '/partners/alupergo.jpg' },
+    { name: 'Cerbone', url: '/partners/cerbone.jpg' },
+    { name: 'Partner', url: '/partners/partner.jpg' },
+    { name: 'Isomax', url: '/partners/isomax.jpg' },
+    { name: 'OIP', url: '/partners/oip.jpg' },
+    { name: 'Tecnotenda', url: '/partners/tecnotenda.jpg' },
+    { name: 'Zero5', url: '/partners/zero5.jpg' },
+    { name: 'Wurth', url: '/partners/wurth.jpg' }
 ];
 
 const PartnersSection = () => {
