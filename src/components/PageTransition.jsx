@@ -29,7 +29,28 @@ const variants = {
 export function PageTransition({ children }) {
     // Scroll to top when the new page mounts (after the previous one has exited)
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        // Multiple methods to ensure scroll to top works
+        const scrollToTop = () => {
+            // Method 1: Try Lenis first if available
+            if (window.lenis) {
+                window.lenis.scrollTo(0, { immediate: true, force: true });
+            }
+
+            // Method 2: Native scroll as fallback
+            window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+
+            // Method 3: Direct manipulation as last resort
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+        };
+
+        // Execute immediately
+        scrollToTop();
+
+        // Also execute after animation completes (400ms from transition duration)
+        const timeoutId = setTimeout(scrollToTop, 50);
+
+        return () => clearTimeout(timeoutId);
     }, []);
 
     return (
