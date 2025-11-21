@@ -20,6 +20,7 @@ const AwningsPage = lazy(() => import('./pages/AwningsPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
 // Wrapper component to use useLocation inside Router
 function AnimatedRoutes() {
@@ -43,6 +44,7 @@ function AnimatedRoutes() {
         <Route path="/servizi" element={<PageTransition><ServicesPage /></PageTransition>} />
         <Route path="/contatti" element={<PageTransition><ContactsPage /></PageTransition>} />
         <Route path="/chi-siamo" element={<PageTransition><AboutPage /></PageTransition>} />
+        <Route path="*" element={<PageTransition><NotFoundPage /></PageTransition>} />
       </Routes>
     </AnimatePresence>
   );
