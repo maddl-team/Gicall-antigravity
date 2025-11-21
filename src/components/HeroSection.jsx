@@ -42,7 +42,7 @@ const HeroSection = () => {
                             VISITA I NOSTRI SHOWROOM
                         </a>
                     </div>
-                    {/*</motion.div>*/}
+                </motion.div>
 
             </div>
 
