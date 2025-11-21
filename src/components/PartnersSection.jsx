@@ -1,15 +1,15 @@
 import { motion } from 'framer-motion';
 
 const partners = [
-    { name: 'Alias', url: '/partners/alias.jpg' },
-    { name: 'Alupergo', url: '/partners/alupergo.jpg' },
-    { name: 'Cerbone', url: '/partners/cerbone.jpg' },
-    { name: 'Partner', url: '/partners/partner.jpg' },
-    { name: 'Isomax', url: '/partners/isomax.jpg' },
-    { name: 'OIP', url: '/partners/oip.jpg' },
-    { name: 'Tecnotenda', url: '/partners/tecnotenda.jpg' },
-    { name: 'Zero5', url: '/partners/zero5.jpg' },
-    { name: 'Wurth', url: '/partners/wurth.jpg' }
+    { name: 'Alias', url: '/partners/alias.webp' },
+    { name: 'Alupergo', url: '/partners/alupergo.webp' },
+    { name: 'Cerbone', url: '/partners/cerbone.webp' },
+    { name: 'Partner', url: '/partners/partner.webp' },
+    { name: 'Isomax', url: '/partners/isomax.webp' },
+    { name: 'OIP', url: '/partners/oip.webp' },
+    { name: 'Tecnotenda', url: '/partners/tecnotenda.webp' },
+    { name: 'Zero5', url: '/partners/zero5.webp' },
+    { name: 'Wurth', url: '/partners/wurth.webp' }
 ];
 
 const PartnersSection = () => {
