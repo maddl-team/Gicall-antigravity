@@ -4,10 +4,12 @@ import { FiSend, FiCheckCircle, FiPhone, FiMail } from 'react-icons/fi';
 
 const ContactSection = () => {
     const [formState, setFormState] = useState({
-        name: '',
+        firstName: '',
+        lastName: '',
         email: '',
         phone: '',
         city: '',
+        postalCode: '',
         serviceType: 'Sostituzione vecchi infissi (Ristrutturazione)',
         products: [],
         message: '',
@@ -38,7 +40,7 @@ const ContactSection = () => {
         setIsSubmitting(false);
         setIsSuccess(true);
         setFormState({
-            name: '', email: '', phone: '', city: '',
+            firstName: '', lastName: '', email: '', phone: '', city: '', postalCode: '',
             serviceType: 'Sostituzione vecchi infissi (Ristrutturazione)',
             products: [], message: '', privacy: false
         });
@@ -112,11 +114,11 @@ const ContactSection = () => {
                             <div className="space-y-3">
                                 <div className="flex items-center gap-3 text-slate-300">
                                     <FiPhone className="text-amber-500" />
-                                    <span>Roma (Capena): <a href="tel:+39000000000" className="hover:text-white transition-colors font-semibold">[Inserire Numero]</a></span>
+                                    <span>Roma (Capena): <a href="tel:+393208203824" className="hover:text-white transition-colors font-semibold">320 820 3824</a></span>
                                 </div>
                                 <div className="flex items-center gap-3 text-slate-300">
                                     <FiPhone className="text-amber-500" />
-                                    <span>Orvieto: <a href="tel:+39000000000" className="hover:text-white transition-colors font-semibold">[Inserire Numero]</a></span>
+                                    <span>Orvieto: <a href="tel:+393290130130" className="hover:text-white transition-colors font-semibold">329 013 0130</a></span>
                                 </div>
                                 <div className="flex items-center gap-3 text-slate-300">
                                     <FiMail className="text-amber-500" />
@@ -155,16 +157,30 @@ const ContactSection = () => {
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Nome e Cognome</label>
+                                        <label className="block text-sm font-medium text-slate-700 mb-1">Nome</label>
                                         <input
                                             type="text"
-                                            name="name"
+                                            name="firstName"
                                             required
-                                            value={formState.name}
+                                            value={formState.firstName}
                                             onChange={handleInputChange}
                                             className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-amber-500 outline-none"
                                         />
                                     </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-slate-700 mb-1">Cognome</label>
+                                        <input
+                                            type="text"
+                                            name="lastName"
+                                            required
+                                            value={formState.lastName}
+                                            onChange={handleInputChange}
+                                            className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-amber-500 outline-none"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
                                         <label className="block text-sm font-medium text-slate-700 mb-1">Email</label>
                                         <input
@@ -176,9 +192,6 @@ const ContactSection = () => {
                                             className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-amber-500 outline-none"
                                         />
                                     </div>
-                                </div>
-
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
                                         <label className="block text-sm font-medium text-slate-700 mb-1">Telefono (Obbligatorio)</label>
                                         <input
@@ -190,8 +203,11 @@ const ContactSection = () => {
                                             className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-amber-500 outline-none"
                                         />
                                     </div>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Città / CAP</label>
+                                        <label className="block text-sm font-medium text-slate-700 mb-1">Città</label>
                                         <input
                                             type="text"
                                             name="city"
@@ -199,6 +215,19 @@ const ContactSection = () => {
                                             value={formState.city}
                                             onChange={handleInputChange}
                                             className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-amber-500 outline-none"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-medium text-slate-700 mb-1">CAP</label>
+                                        <input
+                                            type="text"
+                                            name="postalCode"
+                                            required
+                                            value={formState.postalCode}
+                                            onChange={handleInputChange}
+                                            className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-amber-500 outline-none"
+                                            placeholder="00000"
+                                            maxLength="5"
                                         />
                                     </div>
                                 </div>
