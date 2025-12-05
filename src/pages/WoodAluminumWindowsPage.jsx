@@ -7,11 +7,11 @@ import ContactSection from '../components/ContactSection';
 const WoodAluminumWindowsPage = () => {
     return (
         <>
-            
-                <title>Finestre in Legno Alluminio | La Sintesi Perfetta tra Natura e Tecnologia - GICALL</title>
-                <meta name="description" content="Il calore del legno all'interno, la resistenza dell'alluminio all'esterno. Infissi di pregio a manutenzione zero. Produzione su misura a Roma e Orvieto." />
-                <meta name="keywords" content="Finestre Legno Alluminio Roma, Infissi Legno Alluminio, Serramenti misti, Infissi pregio Roma" />
-            
+
+            <title>Finestre in Legno Alluminio | La Sintesi Perfetta tra Natura e Tecnologia - GICALL</title>
+            <meta name="description" content="Il calore del legno all'interno, la resistenza dell'alluminio all'esterno. Infissi di pregio a manutenzione zero. Produzione su misura a Roma e Orvieto." />
+            <meta name="keywords" content="Finestre Legno Alluminio Roma, Infissi Legno Alluminio, Serramenti misti, Infissi pregio Roma" />
+
 
             <Header />
 
@@ -20,7 +20,7 @@ const WoodAluminumWindowsPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2670&auto=format&fit=crop"
+                            src="/images/gicall_finestre_legno-alluminio_slide.webp"
                             alt="Finestre Legno Alluminio Gicall"
                             className="w-full h-full object-cover"
                         />
@@ -107,7 +107,7 @@ const WoodAluminumWindowsPage = () => {
                             >
                                 <div className="absolute inset-0 bg-amber-500/10 rounded-3xl transform rotate-3"></div>
                                 <img
-                                    src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1600&auto=format&fit=crop"
+                                    src="/images/gicall_finestre_legno-alluminio_materiali.jpg"
                                     alt="Dettaglio infisso Legno Alluminio"
                                     className="relative rounded-3xl shadow-2xl"
                                 />
@@ -226,7 +226,7 @@ const WoodAluminumWindowsPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1505693314120-0d443867891c?q=80&w=1600&auto=format&fit=crop"
+                                    src="/images/gicall_finestre_legno-alluminio_finiture.webp"
                                     alt="Interni in legno pregiato"
                                     className="absolute inset-0 w-full h-full object-cover"
                                 />

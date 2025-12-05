@@ -39,17 +39,17 @@ const SlidingSystemsPage = () => {
         {
             title: "Scorrevoli in Alluminio",
             description: "Per vetrate enormi e profili sottilissimi (Design Minimal).",
-            image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop"
+            image: "/images/gicall_sistemi-scorrevoli_section1.webp"
         },
         {
             title: "Scorrevoli in PVC",
             description: "Il miglior rapporto isolamento/prezzo.",
-            image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop"
+            image: "/images/gicall_sistemi-scorrevoli_section2.webp"
         },
         {
             title: "Scorrevoli Legno/Alluminio",
             description: "Per chi cerca l'eleganza assoluta.",
-            image: "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=2070&auto=format&fit=crop"
+            image: "/images/gicall_sistemi-scorrevoli_section3.webp"
         }
     ];
 
@@ -68,7 +68,7 @@ const SlidingSystemsPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=2670&auto=format&fit=crop"
+                            src="/images/gicall_sistemi-scorrevoli_slide.webp"
                             alt="Vetrata panoramica scorrevole"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -132,7 +132,7 @@ const SlidingSystemsPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2670&auto=format&fit=crop"
+                                    src="/images/gicall_sistemi-scorrevoli_lifestyle.webp"
                                     alt="Open space con vetrata scorrevole"
                                     className="w-full h-full object-cover"
                                 />
@@ -234,7 +234,7 @@ const SlidingSystemsPage = () => {
                                 className="order-2 lg:order-1 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop"
+                                    src="/images/gicall_sistemi-scorrevoli_comfort.webp"
                                     alt="Soglia ribassata"
                                     className="w-full h-full object-cover"
                                 />
@@ -317,7 +317,7 @@ const SlidingSystemsPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2787&auto=format&fit=crop"
+                                    src="/images/gicall_sistemi-scorrevoli_calore.webp"
                                     alt="Isolamento termico"
                                     className="w-full h-full object-cover"
                                 />

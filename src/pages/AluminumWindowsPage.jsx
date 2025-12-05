@@ -36,11 +36,11 @@ const AluminumWindowsPage = () => {
 
     return (
         <div className="font-sans text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900">
-            
-                <title>Finestre in Alluminio a Taglio Termico | Design e Isolamento - GICALL</title>
-                <meta name="description" content="Infissi in alluminio a taglio termico di produzione propria. Profili minimali, grandi vetrate e massimo isolamento termico. Scopri le soluzioni GICALL a Roma e Orvieto." />
-                <meta name="keywords" content="Finestre Alluminio Taglio Termico, Infissi Alluminio Roma, Serramenti Alluminio, Grandi Vetrate, Design Minimal" />
-            
+
+            <title>Finestre in Alluminio a Taglio Termico | Design e Isolamento - GICALL</title>
+            <meta name="description" content="Infissi in alluminio a taglio termico di produzione propria. Profili minimali, grandi vetrate e massimo isolamento termico. Scopri le soluzioni GICALL a Roma e Orvieto." />
+            <meta name="keywords" content="Finestre Alluminio Taglio Termico, Infissi Alluminio Roma, Serramenti Alluminio, Grandi Vetrate, Design Minimal" />
+
 
             <Header />
 
@@ -49,7 +49,7 @@ const AluminumWindowsPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=2070&auto=format&fit=crop"
+                            src="/images/gicall_finestre_alluminio_slide.webp"
                             alt="Finestra in alluminio moderna"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -113,7 +113,7 @@ const AluminumWindowsPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2653&auto=format&fit=crop"
+                                    src="/images/gicall_finestre_alluminio_taglio-termico.webp"
                                     alt="Dettaglio profilo alluminio"
                                     className="w-full h-full object-cover"
                                 />
@@ -165,7 +165,7 @@ const AluminumWindowsPage = () => {
                                 className="order-2 lg:order-1 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2670&auto=format&fit=crop"
+                                    src="/images/gicall_finestre_alluminio_colori.webp"
                                     alt="Personalizzazione alluminio"
                                     className="w-full h-full object-cover"
                                 />
@@ -265,7 +265,7 @@ const AluminumWindowsPage = () => {
                             </div>
                             <div className="md:w-1/2">
                                 <img
-                                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2532&auto=format&fit=crop"
+                                    src="/images/gicall_finestre_alluminio_posa-in-opera.webp"
                                     alt="Installazione professionale infissi"
                                     className="rounded-2xl shadow-xl w-full h-auto"
                                 />

@@ -8,14 +8,14 @@ import ContactSection from '../components/ContactSection';
 const PvcWindowsPage = () => {
     return (
         <>
-            
-                <title>Finestre in PVC Roma e Orvieto | Produzione su Misura - GICALL</title>
-                <meta
-                    name="description"
-                    content="Produzione diretta finestre in PVC ad alto isolamento termico. Prezzi di fabbrica, profili Classe A e posa certificata. Scopri le offerte a Roma e Orvieto."
-                />
-                <meta name="keywords" content="Finestre in PVC Roma, Produzione Infissi PVC, Serramenti PVC, Fabbrica Infissi Roma" />
-            
+
+            <title>Finestre in PVC Roma e Orvieto | Produzione su Misura - GICALL</title>
+            <meta
+                name="description"
+                content="Produzione diretta finestre in PVC ad alto isolamento termico. Prezzi di fabbrica, profili Classe A e posa certificata. Scopri le offerte a Roma e Orvieto."
+            />
+            <meta name="keywords" content="Finestre in PVC Roma, Produzione Infissi PVC, Serramenti PVC, Fabbrica Infissi Roma" />
+
 
             <Header />
 
@@ -26,7 +26,7 @@ const PvcWindowsPage = () => {
                         {/* Placeholder for Hero Image - specific for PVC windows */}
                         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/90 z-10"></div>
                         <img
-                            src="https://images.unsplash.com/photo-1503708928676-1cb796a0891e?q=80&w=2574&auto=format&fit=crop"
+                            src="/images/gicall_finestre_pvc_slide.webp"
                             alt="Finestra in PVC moderna"
                             className="w-full h-full object-cover opacity-50"
                         />
@@ -102,7 +102,7 @@ const PvcWindowsPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop"
+                                    src="/images/gicall_profilo_7_camere.webp"
                                     alt="Dettaglio finestra PVC"
                                     className="w-full h-full object-cover"
                                 />
@@ -166,8 +166,8 @@ const PvcWindowsPage = () => {
                                 className="order-2 lg:order-1"
                             >
                                 <div className="grid grid-cols-2 gap-4">
-                                    <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2500&auto=format&fit=crop" alt="Finestra effetto legno" className="rounded-lg shadow-lg w-full h-64 object-cover" />
-                                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2700&auto=format&fit=crop" alt="Finestra moderna scura" className="rounded-lg shadow-lg w-full h-64 object-cover mt-8" />
+                                    <img src="/images/gicall_pvc-legno_1.webp" alt="Finestra effetto legno" className="rounded-lg shadow-lg w-full h-64 object-cover" />
+                                    <img src="/images/gicall_pvc-legno_2.webp" alt="Finestra moderna scura" className="rounded-lg shadow-lg w-full h-64 object-cover mt-8" />
                                 </div>
                             </motion.div>
 
