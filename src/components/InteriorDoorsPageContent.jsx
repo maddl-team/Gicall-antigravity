@@ -35,13 +35,6 @@ const InteriorDoorsPageContent = () => {
                         <p className="text-xl md:text-2xl text-slate-200 mb-10 leading-relaxed max-w-3xl mx-auto">
                             Non servono solo a dividere gli spazi, ma a definirli. Scopri la nostra collezione di porte interne: dal classico legno al moderno filo muro, progettate per armonizzarsi col tuo stile.
                         </p>
-                        <a
-                            href="/assets/catalogo-porte.pdf" // Placeholder link
-                            className="inline-block bg-amber-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-amber-600 transition-colors duration-300"
-                            onClick={(e) => e.preventDefault()} // Prevent default for now
-                        >
-                            SCARICA IL CATALOGO PORTE
-                        </a>
                     </motion.div>
                 </div>
             </section>

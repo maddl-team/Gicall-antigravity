@@ -13,6 +13,7 @@ const HeroSection = () => {
                     alt="Gicall produzione infissi e serramenti"
                     fill
                     className="object-cover"
+                    sizes="100vw"
                     priority
                 />
                 <div className="absolute inset-0 bg-slate-900/60"></div>

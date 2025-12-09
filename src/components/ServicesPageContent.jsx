@@ -107,6 +107,7 @@ const ServicesPageContent = () => {
                             src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2532&auto=format&fit=crop"
                             alt="Installazione professionale infissi"
                             fill
+                            sizes="100vw"
                             className="object-cover opacity-40"
                             priority
                         />

@@ -53,6 +53,7 @@ const ContactsPageContent = () => {
                             src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2670&auto=format&fit=crop"
                             alt="Showroom GICALL"
                             fill
+                            sizes="100vw"
                             className="object-cover opacity-40"
                             priority
                         />
