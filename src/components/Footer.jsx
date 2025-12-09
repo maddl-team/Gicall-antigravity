@@ -1,5 +1,6 @@
 import { FiFacebook, FiInstagram, FiLinkedin, FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -8,12 +9,16 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
                     {/* Brand */}
                     <div className="lg:col-span-2">
-                        <Link to="/" className="inline-block mb-6">
-                            <img
-                                src="/Logo-Gicall.png"
-                                alt="GICALL Logo"
-                                className="h-12 w-auto"
-                            />
+                        <Link href="/" className="inline-block mb-6">
+                            <div className="relative h-12 w-[127px]">
+                                <Image
+                                    src="/Logo-Gicall.png"
+                                    alt="GICALL Logo"
+                                    fill
+                                    className="object-contain"
+                                    sizes="127px"
+                                />
+                            </div>
                         </Link>
                         <p className="text-sm mb-6 text-slate-600 leading-relaxed">
                             Produzione e installazione di serramenti in PVC e alluminio.
@@ -51,10 +56,10 @@ const Footer = () => {
                     <div>
                         <h4 className="text-slate-900 font-bold mb-4 text-sm uppercase tracking-wider">Infissi & Serramenti</h4>
                         <ul className="space-y-2 text-sm">
-                            <li><Link to="/finestre-pvc" className="hover:text-amber-600 transition-colors">Finestre in PVC</Link></li>
-                            <li><Link to="/finestre-alluminio" className="hover:text-amber-600 transition-colors">Finestre in Alluminio</Link></li>
-                            <li><Link to="/finestre-legno-alluminio" className="hover:text-amber-600 transition-colors">Legno Alluminio</Link></li>
-                            <li><Link to="/sistemi-scorrevoli" className="hover:text-amber-600 transition-colors">Sistemi Scorrevoli</Link></li>
+                            <li><Link href="/finestre-pvc" className="hover:text-amber-600 transition-colors">Finestre in PVC</Link></li>
+                            <li><Link href="/finestre-alluminio" className="hover:text-amber-600 transition-colors">Finestre in Alluminio</Link></li>
+                            <li><Link href="/finestre-legno-alluminio" className="hover:text-amber-600 transition-colors">Legno Alluminio</Link></li>
+                            <li><Link href="/sistemi-scorrevoli" className="hover:text-amber-600 transition-colors">Sistemi Scorrevoli</Link></li>
                         </ul>
                     </div>
 
@@ -62,13 +67,13 @@ const Footer = () => {
                     <div>
                         <h4 className="text-slate-900 font-bold mb-4 text-sm uppercase tracking-wider">Porte & Outdoor</h4>
                         <ul className="space-y-2 text-sm">
-                            <li><Link to="/porte-interne" className="hover:text-amber-600 transition-colors">Porte da Interno</Link></li>
-                            <li><Link to="/porte-blindate" className="hover:text-amber-600 transition-colors">Porte Blindate</Link></li>
-                            <li><Link to="/grate-persiane" className="hover:text-amber-600 transition-colors">Grate e Persiane</Link></li>
-                            <li><Link to="/zanzariere" className="hover:text-amber-600 transition-colors">Zanzariere</Link></li>
-                            <li><Link to="/avvolgibili" className="hover:text-amber-600 transition-colors">Avvolgibili</Link></li>
-                            <li><Link to="/tende-da-sole" className="hover:text-amber-600 transition-colors">Tende da Sole</Link></li>
-                            <li><Link to="/pergole" className="hover:text-amber-600 transition-colors">Pergole</Link></li>
+                            <li><Link href="/porte-interne" className="hover:text-amber-600 transition-colors">Porte da Interno</Link></li>
+                            <li><Link href="/porte-blindate" className="hover:text-amber-600 transition-colors">Porte Blindate</Link></li>
+                            <li><Link href="/grate-persiane" className="hover:text-amber-600 transition-colors">Grate e Persiane</Link></li>
+                            <li><Link href="/zanzariere" className="hover:text-amber-600 transition-colors">Zanzariere</Link></li>
+                            <li><Link href="/avvolgibili-cassonetti" className="hover:text-amber-600 transition-colors">Avvolgibili</Link></li>
+                            <li><Link href="/tende-da-sole" className="hover:text-amber-600 transition-colors">Tende da Sole</Link></li>
+                            <li><Link href="/pergole-bioclimatiche" className="hover:text-amber-600 transition-colors">Pergole</Link></li>
                         </ul>
                     </div>
 
@@ -76,9 +81,9 @@ const Footer = () => {
                     <div>
                         <h4 className="text-slate-900 font-bold mb-4 text-sm uppercase tracking-wider">Azienda</h4>
                         <ul className="space-y-2 text-sm mb-6">
-                            <li><Link to="/chi-siamo" className="hover:text-amber-600 transition-colors">Chi Siamo</Link></li>
-                            <li><Link to="/servizi" className="hover:text-amber-600 transition-colors">Servizi</Link></li>
-                            <li><Link to="/contatti" className="hover:text-amber-600 transition-colors">Contatti</Link></li>
+                            <li><Link href="/chi-siamo" className="hover:text-amber-600 transition-colors">Chi Siamo</Link></li>
+                            <li><Link href="/servizi" className="hover:text-amber-600 transition-colors">Servizi</Link></li>
+                            <li><Link href="/contatti" className="hover:text-amber-600 transition-colors">Contatti</Link></li>
                         </ul>
 
                         <h4 className="text-slate-900 font-bold mb-4 text-sm uppercase tracking-wider">Contatti Rapidi</h4>

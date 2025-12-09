@@ -1,3 +1,4 @@
+"use client";
 import { motion } from 'framer-motion';
 import { FiMapPin, FiPhone, FiClock } from 'react-icons/fi';
 

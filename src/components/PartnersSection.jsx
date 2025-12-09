@@ -1,3 +1,6 @@
+"use client";
+import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const partners = [
@@ -28,31 +31,37 @@ const PartnersSection = () => {
                 <div className="animate-marquee whitespace-nowrap flex items-center gap-16 py-4">
                     {/* First set of logos */}
                     {partners.map((partner, index) => (
-                        <div key={index} className="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm border border-slate-100 mx-4">
-                            <img
+                        <div key={index} className="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm border border-slate-100 mx-4 relative w-48 h-28">
+                            <Image
                                 src={partner.url}
                                 alt={partner.name}
-                                className="h-16 md:h-24 w-auto object-contain"
+                                fill
+                                sizes="192px"
+                                className="object-contain p-2"
                             />
                         </div>
                     ))}
                     {/* Duplicate set for seamless loop */}
                     {partners.map((partner, index) => (
-                        <div key={`dup-${index}`} className="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm border border-slate-100 mx-4">
-                            <img
+                        <div key={`dup-${index}`} className="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm border border-slate-100 mx-4 relative w-48 h-28">
+                            <Image
                                 src={partner.url}
                                 alt={partner.name}
-                                className="h-16 md:h-24 w-auto object-contain"
+                                fill
+                                sizes="192px"
+                                className="object-contain p-2"
                             />
                         </div>
                     ))}
                     {/* Triplicate set for safety on wide screens */}
                     {partners.map((partner, index) => (
-                        <div key={`trip-${index}`} className="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm border border-slate-100 mx-4">
-                            <img
+                        <div key={`trip-${index}`} className="flex-shrink-0 bg-white p-4 rounded-xl shadow-sm border border-slate-100 mx-4 relative w-48 h-28">
+                            <Image
                                 src={partner.url}
                                 alt={partner.name}
-                                className="h-16 md:h-24 w-auto object-contain"
+                                fill
+                                sizes="192px"
+                                className="object-contain p-2"
                             />
                         </div>
                     ))}

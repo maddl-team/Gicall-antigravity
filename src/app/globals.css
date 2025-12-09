@@ -1,0 +1,158 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  /* Using Inter variable from layout.js */
+  --font-mono: var(--font-geist-mono);
+
+  /* Custom Colors from legacy tailwind.config.js */
+  --color-amber-50: #fff0f0;
+  --color-amber-100: #ffe5e5;
+  --color-amber-200: #ffc0c0;
+  --color-amber-300: #ffa0a0;
+  --color-amber-400: #ff6060;
+  --color-amber-500: #ff0000;
+  --color-amber-600: #cc0000;
+  --color-amber-700: #990000;
+  --color-amber-800: #660000;
+  --color-amber-900: #330000;
+
+  --color-slate-900: #191c25;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  /* Legacy CSS Variables from index.css */
+  --color-primary: #191c25;
+  --color-secondary: #334155;
+  --color-accent: #ff0000;
+  --color-accent-hover: #cc0000;
+
+  --bg-white: #ffffff;
+  --bg-light: #f8fafc;
+  --bg-dark: #191c25;
+
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --text-light: #f1f5f9;
+
+  --container-padding: 2rem;
+  --max-width: 1280px;
+
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease-in-out;
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilities from index.css */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 2px solid var(--bg-white);
+  color: var(--bg-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-white);
+  color: var(--color-primary);
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Animations from index.css */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}

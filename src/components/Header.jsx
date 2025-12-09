@@ -1,13 +1,16 @@
+"use client";
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX, FiPhone, FiChevronDown } from 'react-icons/fi';
-import { Link, useLocation } from 'react-router-dom';
+import Link from 'next/link';
+import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
-  const location = useLocation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,9 +47,9 @@ const Header = () => {
       href: '/#outdoor',
       subLinks: [
         { name: 'Zanzariere', href: '/zanzariere' },
-        { name: 'Avvolgibili e Cassonetti', href: '/avvolgibili' },
+        { name: 'Avvolgibili e Cassonetti', href: '/avvolgibili-cassonetti' },
         { name: 'Tende da Sole', href: '/tende-da-sole' },
-        { name: 'Pergole & Arredo Giardino', href: '/pergole' },
+        { name: 'Pergole & Arredo Giardino', href: '/pergole-bioclimatiche' },
         { name: 'Lavorazioni in Ferro', href: '/lavorazioni-ferro' },
       ]
     },
@@ -64,15 +67,24 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${location.pathname === '/' && !isScrolled
+      className={`fixed top-0 left-0 right-0 z-[9999] transition-all duration-300 ${pathname === '/' && !isScrolled
         ? 'bg-transparent py-6'
         : 'bg-white shadow-md py-4'
         }`}
     >
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
-          <img src="/Logo-Gicall.png" alt="GICALL" className="h-12 w-auto" />
+        <Link href="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
+          <div className="relative h-12 w-[127px]">
+            <Image
+              src="/Logo-Gicall.png"
+              alt="GICALL"
+              fill
+              className="object-contain"
+              sizes="127px"
+              priority
+            />
+          </div>
         </Link>
 
         {/* Desktop Nav */}
@@ -86,7 +98,7 @@ const Header = () => {
             >
               {link.subLinks ? (
                 <span
-                  className={`text-sm font-medium transition-colors hover:text-amber-500 flex items-center gap-1 cursor-pointer ${isScrolled || location.pathname !== '/' ? 'text-slate-700' : 'text-slate-100'
+                  className={`text-sm font-medium transition-colors hover:text-amber-500 flex items-center gap-1 cursor-pointer ${isScrolled || pathname !== '/' ? 'text-slate-700' : 'text-slate-100'
                     }`}
                 >
                   {link.name}
@@ -94,8 +106,8 @@ const Header = () => {
                 </span>
               ) : (
                 <Link
-                  to={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-amber-500 flex items-center gap-1 ${isScrolled || location.pathname !== '/' ? 'text-slate-700' : 'text-slate-100'
+                  href={link.href}
+                  className={`text-sm font-medium transition-colors hover:text-amber-500 flex items-center gap-1 ${isScrolled || pathname !== '/' ? 'text-slate-700' : 'text-slate-100'
                     }`}
                 >
                   {link.name}
@@ -115,7 +127,7 @@ const Header = () => {
                     {link.subLinks.map((subLink) => (
                       <Link
                         key={subLink.name}
-                        to={subLink.href}
+                        href={subLink.href}
                         className="block px-4 py-3 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors"
                       >
                         {subLink.name}
@@ -164,7 +176,7 @@ const Header = () => {
                         {link.subLinks.map((subLink) => (
                           <Link
                             key={subLink.name}
-                            to={subLink.href}
+                            href={subLink.href}
                             className="text-slate-600 hover:text-amber-500 text-sm"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
@@ -175,7 +187,7 @@ const Header = () => {
                     </div>
                   ) : (
                     <Link
-                      to={link.href}
+                      href={link.href}
                       className="text-slate-700 font-medium hover:text-amber-500 block"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >

@@ -1,6 +1,8 @@
+"use client";
 import { motion, useInView } from 'framer-motion';
 import { FiMaximize, FiShield, FiSun } from 'react-icons/fi';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
+import Image from 'next/image';
 import { useRef } from 'react';
 
 const services = [
@@ -39,7 +41,7 @@ const services = [
             { text: 'Scopri Zanzariere', url: '/zanzariere' },
             { text: 'Scopri Avvolgibili e Cassonetti', url: '/avvolgibili-cassonetti' },
             { text: 'Scopri Tende da Sole', url: '/tende-da-sole' },
-            { text: 'Scopri Pergole e Arredo Giardino', url: '/pergole-arredo-giardino' }
+            { text: 'Scopri Pergole e Arredo Giardino', url: '/pergole-bioclimatiche' }
         ]
     }
 ];
@@ -58,10 +60,12 @@ const ServiceCard = ({ service, index }) => {
         >
             <div className="relative h-64 overflow-hidden">
                 <div className="absolute inset-0 bg-slate-900/20 group-hover:bg-slate-900/10 transition-colors z-10" />
-                <img
+                <Image
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute bottom-4 left-4 z-20 bg-white/90 backdrop-blur p-2 rounded-lg text-amber-500">
                     {service.icon}
@@ -79,7 +83,7 @@ const ServiceCard = ({ service, index }) => {
                     <div className="space-y-2 mt-auto">
                         {service.links.map((link, i) => (
                             link.url.startsWith('/') ? (
-                                <Link key={i} to={link.url} className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
+                                <Link key={i} href={link.url} className="block text-sm font-semibold text-amber-600 hover:text-amber-700 hover:underline">
                                     {link.text} →
                                 </Link>
                             ) : (

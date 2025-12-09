@@ -1,3 +1,6 @@
+"use client";
+import Link from 'next/link';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
@@ -5,10 +8,12 @@ const HeroSection = () => {
         <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0 z-0">
-                <img
+                <Image
                     src="/hero/gicall_hero_homepage.webp"
                     alt="Gicall produzione infissi e serramenti"
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    priority
                 />
                 <div className="absolute inset-0 bg-slate-900/60"></div>
             </div>

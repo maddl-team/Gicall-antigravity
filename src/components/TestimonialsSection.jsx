@@ -1,3 +1,4 @@
+"use client";
 import { motion } from 'framer-motion';
 import { FiStar } from 'react-icons/fi';
 import { FcGoogle } from 'react-icons/fc';

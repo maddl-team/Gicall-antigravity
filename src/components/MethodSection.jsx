@@ -1,3 +1,4 @@
+"use client";
 import { motion } from 'framer-motion';
 import { FiClipboard, FiPenTool, FiBox, FiTool } from 'react-icons/fi';
 

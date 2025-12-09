@@ -1,5 +1,7 @@
+"use client";
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { FiSend, FiCheckCircle, FiPhone, FiMail } from 'react-icons/fi';
 
 const ContactSection = () => {
@@ -50,10 +52,12 @@ const ContactSection = () => {
         <section id="contatti" className="py-20 bg-slate-900 text-white relative overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
-                <img
+                <Image
                     src="/images/background_contactform_gicall.webp"
                     alt="Background"
-                    className="w-full h-full object-cover opacity-10"
+                    fill
+                    sizes="100vw"
+                    className="object-cover opacity-10"
                 />
                 <div className="absolute inset-0 bg-slate-900/80"></div>
             </div>

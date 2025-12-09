@@ -1,3 +1,5 @@
+"use client";
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiCheckCircle, FiSettings, FiZap } from 'react-icons/fi';
 
@@ -23,7 +25,7 @@ const USPSection = () => {
     return (
         <section id="usp" className="section bg-white">
             <div className="container">
-                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div className="flex flex-col lg:flex-row gap-12 lg:gap-20">
                     {/* Text Content */}
                     <motion.div
                         className="flex-1"
@@ -69,11 +71,13 @@ const USPSection = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                     >
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                            <img
+                        <div className="relative h-full min-h-[500px] rounded-2xl overflow-hidden shadow-2xl">
+                            <Image
                                 src="/images/gicall_about_homepage.webp"
                                 alt="Produzione infissi in fabbrica"
-                                className="w-full h-full object-cover"
+                                fill
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                                className="object-cover"
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/80 to-transparent p-8">
                                 <p className="text-white text-xl font-medium">
