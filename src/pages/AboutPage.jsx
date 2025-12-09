@@ -18,7 +18,7 @@ const AboutPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=2664&auto=format&fit=crop"
+                            src="/images/gicall_chi-siamo_slide.webp"
                             alt="Interno fabbrica Gicall"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -72,7 +72,7 @@ const AboutPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop"
+                                    src="/images/gicall_chi-siamo_dettaglio.webp"
                                     alt="Team Gicall"
                                     className="w-full h-full object-cover"
                                 />

@@ -17,6 +17,7 @@ const MosquitoNetsPage = lazy(() => import('./pages/MosquitoNetsPage'));
 const RollerShuttersPage = lazy(() => import('./pages/RollerShuttersPage'));
 const PergolasPage = lazy(() => import('./pages/PergolasPage'));
 const AwningsPage = lazy(() => import('./pages/AwningsPage'));
+const IronWorksPage = lazy(() => import('./pages/IronWorksPage'));
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const ContactsPage = lazy(() => import('./pages/ContactsPage'));
@@ -41,6 +42,7 @@ function AnimatedRoutes() {
         <Route path="/avvolgibili" element={<PageTransition><RollerShuttersPage /></PageTransition>} />
         <Route path="/pergole" element={<PageTransition><PergolasPage /></PageTransition>} />
         <Route path="/tende-da-sole" element={<PageTransition><AwningsPage /></PageTransition>} />
+        <Route path="/lavorazioni-ferro" element={<PageTransition><IronWorksPage /></PageTransition>} />
         <Route path="/servizi" element={<PageTransition><ServicesPage /></PageTransition>} />
         <Route path="/contatti" element={<PageTransition><ContactsPage /></PageTransition>} />
         <Route path="/chi-siamo" element={<PageTransition><AboutPage /></PageTransition>} />

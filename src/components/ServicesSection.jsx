@@ -13,7 +13,8 @@ const services = [
         links: [
             { text: 'Scopri Finestre in PVC', url: '/finestre-pvc' },
             { text: 'Scopri Finestre in Alluminio', url: '/finestre-alluminio' },
-            { text: 'Scopri Legno/Alluminio', url: '/finestre-legno-alluminio' }
+            { text: 'Scopri Legno/Alluminio', url: '/finestre-legno-alluminio' },
+            { text: 'Scopri Sistemi Scorrevoli', url: '/sistemi-scorrevoli' }
         ]
     },
     {
@@ -22,7 +23,10 @@ const services = [
         description: 'Sicurezza e stile devono viaggiare insieme. Le nostre porte blindate offrono i più alti standard di classe antieffrazione senza rinunciare all\'eleganza.',
         icon: <FiShield className="w-8 h-8" />,
         image: '/images/gicall_portoni_blindati_homepage.webp',
-        links: []
+        links: [
+            { text: 'Scopri Porte Interne', url: '/porte-interne' },
+            { text: 'Scopri Porte Blindate', url: '/porte-blindate' }
+        ]
     },
     {
         id: 3,
@@ -30,7 +34,13 @@ const services = [
         description: 'Vivi i tuoi spazi esterni e proteggi quelli interni. Grate, Persiane, Zanzariere, Tende da Sole e Pergole per trasformare il tuo giardino o terrazzo.',
         icon: <FiSun className="w-8 h-8" />,
         image: '/images/gicall_outdoor_homepage.webp',
-        links: []
+        links: [
+            { text: 'Scopri Grate e Persiane', url: '/grate-persiane' },
+            { text: 'Scopri Zanzariere', url: '/zanzariere' },
+            { text: 'Scopri Avvolgibili e Cassonetti', url: '/avvolgibili-cassonetti' },
+            { text: 'Scopri Tende da Sole', url: '/tende-da-sole' },
+            { text: 'Scopri Pergole e Arredo Giardino', url: '/pergole-arredo-giardino' }
+        ]
     }
 ];
 
