@@ -19,7 +19,7 @@ const IronWorksPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1599370773669-702330a6c669?q=80&w=2670&auto=format&fit=crop"
+                            src="/images/gicall_lavorazione-ferro_slide.webp"
                             alt="Cancello in ferro moderno"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -45,9 +45,6 @@ const IronWorksPage = () => {
                             >
                                 RICHIEDI UN PREVENTIVO
                             </a>
-                            <div className="mt-4">
-                                <a href="/catalogo-realizzazioni.pdf" className="text-slate-300 hover:text-white transition-colors underline" onClick={(e) => e.preventDefault()}>Scarica il catalogo realizzazioni</a>
-                            </div>
                         </motion.div>
                     </div>
                 </section>
@@ -81,7 +78,7 @@ const IronWorksPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1622372738946-62e02505feb3?q=80&w=2600&auto=format&fit=crop"
+                                    src="/images/gicall_lavorazione-ferro_dettaglio.webp"
                                     alt="Lavorazione ferro in officina"
                                     className="w-full h-full object-cover"
                                 />
@@ -215,7 +212,7 @@ const IronWorksPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-slate-700"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2670&auto=format&fit=crop"
+                                    src="/images/gicall_lavorazione-ferro_operaio.webp"
                                     alt="Lavorazione acciaio e saldatura"
                                     className="w-full h-full object-cover"
                                 />
