@@ -18,7 +18,7 @@ const SecurityDoorsPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?q=80&w=2670&auto=format&fit=crop"
+                            src="/images/gicall_porte-blindate_slide.webp"
                             alt="Porta blindata sicura"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -86,7 +86,7 @@ const SecurityDoorsPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?q=80&w=1974&auto=format&fit=crop"
+                                    src="/images/gicall_porte-blindate_dettaglio.webp"
                                     alt="Dettaglio sicurezza porta blindata"
                                     className="w-full h-full object-cover"
                                 />
@@ -220,7 +220,7 @@ const SecurityDoorsPage = () => {
                                 className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-slate-700"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?q=80&w=2069&auto=format&fit=crop"
+                                    src="/images/gicall_porte-blindate_elettronico.webp"
                                     alt="Smart lock"
                                     className="w-full h-full object-cover"
                                 />

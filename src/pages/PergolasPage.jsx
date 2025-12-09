@@ -19,7 +19,7 @@ const PergolasPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1633505078277-e49a2796d4d7?q=80&w=2669&auto=format&fit=crop"
+                            src="/images/gicall_pergole_slide.webp"
                             alt="Pergola bioclimatica"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -75,7 +75,7 @@ const PergolasPage = () => {
                                 className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0?q=80&w=2670&auto=format&fit=crop"
+                                    src="/images/gicall_pergole_dettaglio.webp"
                                     alt="Outdoor living"
                                     className="w-full h-full object-cover"
                                 />
@@ -158,7 +158,7 @@ const PergolasPage = () => {
                                 className="order-2 lg:order-1 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1628624747186-a941c476b7ef?q=80&w=2670&auto=format&fit=crop"
+                                    src="/images/gicall_pergole_giardino.webp"
                                     alt="Pergotenda"
                                     className="w-full h-full object-cover"
                                 />

@@ -18,7 +18,7 @@ const InteriorDoorsPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669&auto=format&fit=crop"
+                            src="/images/gicall_porte-interne_slide.webp"
                             alt="Porta interna di design"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -76,7 +76,7 @@ const InteriorDoorsPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?q=80&w=1974&auto=format&fit=crop"
+                                    src="/images/gicall_porte-interne_dettaglio.webp"
                                     alt="Dettaglio porta interna"
                                     className="w-full h-full object-cover"
                                 />
@@ -222,7 +222,7 @@ const InteriorDoorsPage = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true, amount: 0.3 }}
                             >
-                                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
                                     Porte Filo Muro: <span className="text-amber-500">L'Invisibilità è di moda.</span>
                                 </h2>
                                 <p className="text-lg text-slate-300 mb-6 leading-relaxed">
@@ -250,7 +250,7 @@ const InteriorDoorsPage = () => {
                                 className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-slate-700"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?q=80&w=2070&auto=format&fit=crop"
+                                    src="/images/gicall_porte-interne_filo-muro.webp"
                                     alt="Porta filo muro"
                                     className="w-full h-full object-cover"
                                 />

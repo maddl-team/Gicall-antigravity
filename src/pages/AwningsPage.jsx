@@ -19,7 +19,7 @@ const AwningsPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=2669&auto=format&fit=crop"
+                            src="/images/gicall_tende-da-sole_slide.jpg"
                             alt="Tende da sole"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -86,7 +86,7 @@ const AwningsPage = () => {
                                 className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=2670&auto=format&fit=crop"
+                                    src="/images/gicall_tende-da-sole_dettaglio.webp"
                                     alt="Tenda da sole"
                                     className="w-full h-full object-cover"
                                 />

@@ -19,7 +19,7 @@ const MosquitoNetsPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=2670&auto=format&fit=crop"
+                            src="/images/gicall_zanzariere_slide.webp"
                             alt="Zanzariere su misura"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -75,7 +75,7 @@ const MosquitoNetsPage = () => {
                                 className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2669&auto=format&fit=crop"
+                                    src="/images/gicall_zanzariere_dettaglio.webp"
                                     alt="Dettaglio zanzariera"
                                     className="w-full h-full object-cover"
                                 />
@@ -235,7 +235,7 @@ const MosquitoNetsPage = () => {
                                 className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-slate-700"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2670&auto=format&fit=crop"
+                                    src="/images/gicall_zanzariere_montaggio.webp"
                                     alt="Installazione zanzariere"
                                     className="w-full h-full object-cover"
                                 />

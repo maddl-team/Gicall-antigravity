@@ -18,7 +18,7 @@ const GratingsShuttersPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=2670&auto=format&fit=crop"
+                            src="/images/gicall_grate-persiane_slide.webp"
                             alt="Grata di sicurezza luminosa"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -75,7 +75,7 @@ const GratingsShuttersPage = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=1974&auto=format&fit=crop"
+                                    src="/images/gicall_grate-persiane_dettaglio.webp"
                                     alt="Casa sicura e luminosa"
                                     className="w-full h-full object-cover"
                                 />
@@ -152,7 +152,7 @@ const GratingsShuttersPage = () => {
                                 className="order-2 lg:order-1 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1519643381401-22c77e60520e?q=80&w=2073&auto=format&fit=crop"
+                                    src="/images/gicall_grate-persiane_legno-acciaio.webp"
                                     alt="Persiane blindate"
                                     className="w-full h-full object-cover"
                                 />

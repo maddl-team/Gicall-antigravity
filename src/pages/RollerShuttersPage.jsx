@@ -19,7 +19,7 @@ const RollerShuttersPage = () => {
                 <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <img
-                            src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?q=80&w=2670&auto=format&fit=crop"
+                            src="/images/gicall_avvolgibili_slide.webp"
                             alt="Avvolgibili moderni"
                             className="w-full h-full object-cover opacity-40"
                         />
@@ -81,7 +81,7 @@ const RollerShuttersPage = () => {
                                 className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=2574&auto=format&fit=crop"
+                                    src="/images/gicall_avvolgibili_dettaglio.webp"
                                     alt="Cassonetto coibentato"
                                     className="w-full h-full object-cover"
                                 />
@@ -205,7 +205,7 @@ const RollerShuttersPage = () => {
                                 className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-slate-700"
                             >
                                 <img
-                                    src="https://images.unsplash.com/photo-1558002038-1091a166111c?q=80&w=2670&auto=format&fit=crop"
+                                    src="/images/gicall_avvolgibili_cinghia.webp"
                                     alt="Domotica tapparelle"
                                     className="w-full h-full object-cover"
                                 />
