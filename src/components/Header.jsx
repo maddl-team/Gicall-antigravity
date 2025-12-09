@@ -182,6 +182,7 @@ const Header = () => {
         {/* Mobile Menu Toggle */}
         <button
           className="md:hidden text-2xl text-slate-900"
+          aria-label={isMobileMenuOpen ? "Chiudi menu" : "Apri menu"}
           aria-expanded={isMobileMenuOpen}
           aria-controls="mobile-menu"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

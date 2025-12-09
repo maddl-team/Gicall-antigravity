@@ -161,8 +161,9 @@ const ContactSection = () => {
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Nome</label>
+                                        <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-1">Nome</label>
                                         <input
+                                            id="firstName"
                                             type="text"
                                             name="firstName"
                                             required
@@ -172,8 +173,9 @@ const ContactSection = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Cognome</label>
+                                        <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-1">Cognome</label>
                                         <input
+                                            id="lastName"
                                             type="text"
                                             name="lastName"
                                             required
@@ -186,8 +188,9 @@ const ContactSection = () => {
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                                        <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">Email</label>
                                         <input
+                                            id="email"
                                             type="email"
                                             name="email"
                                             required
@@ -197,8 +200,9 @@ const ContactSection = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Telefono (Obbligatorio)</label>
+                                        <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">Telefono (Obbligatorio)</label>
                                         <input
+                                            id="phone"
                                             type="tel"
                                             name="phone"
                                             required
@@ -211,8 +215,9 @@ const ContactSection = () => {
 
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">Città</label>
+                                        <label htmlFor="city" className="block text-sm font-medium text-slate-700 mb-1">Città</label>
                                         <input
+                                            id="city"
                                             type="text"
                                             name="city"
                                             required
@@ -222,8 +227,9 @@ const ContactSection = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label className="block text-sm font-medium text-slate-700 mb-1">CAP</label>
+                                        <label htmlFor="postalCode" className="block text-sm font-medium text-slate-700 mb-1">CAP</label>
                                         <input
+                                            id="postalCode"
                                             type="text"
                                             name="postalCode"
                                             required
@@ -237,8 +243,9 @@ const ContactSection = () => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-medium text-slate-700 mb-1">Di cosa hai bisogno?</label>
+                                    <label htmlFor="serviceType" className="block text-sm font-medium text-slate-700 mb-1">Di cosa hai bisogno?</label>
                                     <select
+                                        id="serviceType"
                                         name="serviceType"
                                         value={formState.serviceType}
                                         onChange={handleInputChange}
@@ -271,8 +278,9 @@ const ContactSection = () => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-medium text-slate-700 mb-1">Messaggio / Note</label>
+                                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">Messaggio / Note</label>
                                     <textarea
+                                        id="message"
                                         name="message"
                                         rows="3"
                                         value={formState.message}

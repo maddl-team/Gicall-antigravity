@@ -30,6 +30,7 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2 bg-slate-200 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300"
+                                aria-label="Facebook GICALL"
                             >
                                 <FiFacebook size={20} />
                             </a>
@@ -38,6 +39,7 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2 bg-slate-200 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300"
+                                aria-label="Instagram GICALL"
                             >
                                 <FiInstagram size={20} />
                             </a>
@@ -46,6 +48,7 @@ const Footer = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2 bg-slate-200 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300"
+                                aria-label="LinkedIn GICALL"
                             >
                                 <FiLinkedin size={20} />
                             </a>
