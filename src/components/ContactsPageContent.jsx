@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaClock, FaFacebook, FaInstagram, FaLinkedin, FaTools } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaClock, FaFacebook, FaInstagram, FaLinkedin, FaTools, FaTiktok, FaYoutube } from 'react-icons/fa';
+import ContactSection from './ContactSection';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -220,123 +221,7 @@ const ContactsPageContent = () => {
                     </div>
                 </section>
 
-                {/* Contact Form Section */}
-                <section className="section bg-white">
-                    <div className="container">
-                        <div className="max-w-3xl mx-auto">
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true, amount: 0.3 }}
-                                transition={{ duration: 0.6 }}
-                            >
-                                <div className="text-center mb-12">
-                                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">
-                                        Inviaci un messaggio
-                                    </h2>
-                                    <p className="text-lg text-slate-600">
-                                        Compila il form sottostante. Il nostro ufficio tecnico o commerciale ti risponderà entro 24 ore lavorative.
-                                    </p>
-                                </div>
-
-                                <form className="bg-slate-50 p-8 rounded-2xl shadow-lg space-y-6">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                                Nome e Cognome *
-                                            </label>
-                                            <input
-                                                type="text"
-                                                required
-                                                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
-                                                placeholder="Mario Rossi"
-                                            />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                                Email *
-                                            </label>
-                                            <input
-                                                type="email"
-                                                required
-                                                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
-                                                placeholder="mario.rossi@email.com"
-                                            />
-                                        </div>
-                                    </div>
-
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div>
-                                            <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                                Telefono *
-                                            </label>
-                                            <input
-                                                type="tel"
-                                                required
-                                                className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all"
-                                                placeholder="+39 123 456 7890"
-                                            />
-                                        </div>
-                                        <div>
-                                            <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                                Sede di interesse
-                                            </label>
-                                            <select className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all">
-                                                <option value="">Seleziona...</option>
-                                                <option value="roma">Roma</option>
-                                                <option value="orvieto">Orvieto</option>
-                                                <option value="non-so">Non so</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                            Oggetto
-                                        </label>
-                                        <select className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all">
-                                            <option value="">Seleziona...</option>
-                                            <option value="preventivo">Richiesta Preventivo</option>
-                                            <option value="assistenza">Assistenza Post-Vendita</option>
-                                            <option value="collaborazione">Collaborazione</option>
-                                            <option value="altro">Altro</option>
-                                        </select>
-                                    </div>
-
-                                    <div>
-                                        <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                            Messaggio *
-                                        </label>
-                                        <textarea
-                                            required
-                                            rows="6"
-                                            className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-amber-500 focus:ring-2 focus:ring-amber-200 outline-none transition-all resize-none"
-                                            placeholder="Descrivi il tuo progetto o la tua richiesta..."
-                                        ></textarea>
-                                    </div>
-
-                                    <div className="flex items-start gap-3">
-                                        <input
-                                            type="checkbox"
-                                            required
-                                            className="mt-1 w-5 h-5 text-amber-500 border-slate-300 rounded focus:ring-amber-200"
-                                        />
-                                        <label className="text-sm text-slate-600">
-                                            Acconsento al trattamento dei dati personali secondo la Privacy Policy *
-                                        </label>
-                                    </div>
-
-                                    <button
-                                        type="submit"
-                                        className="w-full bg-amber-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg hover:bg-amber-600 transition-colors duration-300"
-                                    >
-                                        Invia Messaggio
-                                    </button>
-                                </form>
-                            </motion.div>
-                        </div>
-                    </div>
-                </section>
+                <ContactSection />
 
                 {/* Technical Assistance Section */}
                 <section className="section bg-slate-50">
@@ -385,28 +270,49 @@ const ContactsPageContent = () => {
                         </p>
                         <div className="flex justify-center gap-6">
                             <a
-                                href="https://facebook.com/gicall"
+                                href="https://www.facebook.com/gicallsrls/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-4 bg-slate-800 rounded-full hover:bg-amber-500 transition-colors duration-300"
+                                aria-label="Facebook GICALL"
                             >
                                 <FaFacebook className="text-3xl" />
                             </a>
                             <a
-                                href="https://instagram.com/gicall"
+                                href="https://www.instagram.com/gicall_srls/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-4 bg-slate-800 rounded-full hover:bg-amber-500 transition-colors duration-300"
+                                aria-label="Instagram GICALL"
                             >
                                 <FaInstagram className="text-3xl" />
                             </a>
                             <a
-                                href="https://linkedin.com/company/gicall"
+                                href="https://www.linkedin.com/company/gicall/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-4 bg-slate-800 rounded-full hover:bg-amber-500 transition-colors duration-300"
+                                aria-label="LinkedIn GICALL"
                             >
                                 <FaLinkedin className="text-3xl" />
+                            </a>
+                            <a
+                                href="https://www.tiktok.com/@gicall_finestre"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-4 bg-slate-800 rounded-full hover:bg-amber-500 transition-colors duration-300"
+                                aria-label="TikTok GICALL"
+                            >
+                                <FaTiktok className="text-3xl" />
+                            </a>
+                            <a
+                                href="https://www.youtube.com/channel/UCne5HGMzSs75BY9cDu1FLzA"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-4 bg-slate-800 rounded-full hover:bg-amber-500 transition-colors duration-300"
+                                aria-label="YouTube GICALL"
+                            >
+                                <FaYoutube className="text-3xl" />
                             </a>
                         </div>
                     </div>

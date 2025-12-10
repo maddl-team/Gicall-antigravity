@@ -8,7 +8,13 @@ const organization = {
   name: 'GICALL',
   url: siteUrl,
   logo: `${siteUrl}/Logo-Gicall.png`,
-  sameAs: [],
+  sameAs: [
+    'https://www.instagram.com/gicall_srls/',
+    'https://www.facebook.com/gicallsrls/',
+    'https://www.tiktok.com/@gicall_finestre',
+    'https://www.youtube.com/channel/UCne5HGMzSs75BY9cDu1FLzA',
+    'https://www.linkedin.com/company/gicall/',
+  ],
 };
 
 const localBusinesses = [
@@ -30,6 +36,13 @@ const localBusinesses = [
     email: 'roma@gicall.it',
     url: siteUrl,
     department: 'Fabbrica & Showroom',
+    sameAs: [
+      'https://www.instagram.com/gicall_srls/',
+      'https://www.facebook.com/gicallsrls/',
+      'https://www.tiktok.com/@gicall_finestre',
+      'https://www.youtube.com/channel/UCne5HGMzSs75BY9cDu1FLzA',
+      'https://www.linkedin.com/company/gicall/',
+    ],
   },
   {
     '@context': 'https://schema.org',
@@ -49,6 +62,13 @@ const localBusinesses = [
     email: 'orvieto@gicall.it',
     url: siteUrl,
     department: 'Showroom',
+    sameAs: [
+      'https://www.instagram.com/gicall_srls/',
+      'https://www.facebook.com/gicallsrls/',
+      'https://www.tiktok.com/@gicall_finestre',
+      'https://www.youtube.com/channel/UCne5HGMzSs75BY9cDu1FLzA',
+      'https://www.linkedin.com/company/gicall/',
+    ],
   },
 ];
 

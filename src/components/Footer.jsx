@@ -1,4 +1,5 @@
 import { FiFacebook, FiInstagram, FiLinkedin, FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
+import { FaTiktok, FaYoutube } from 'react-icons/fa6';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -26,7 +27,7 @@ const Footer = () => {
                         </p>
                         <div className="flex gap-4">
                             <a
-                                href="https://facebook.com/gicall"
+                                href="https://www.facebook.com/gicallsrls/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2 bg-slate-200 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300"
@@ -35,7 +36,7 @@ const Footer = () => {
                                 <FiFacebook size={20} />
                             </a>
                             <a
-                                href="https://instagram.com/gicall"
+                                href="https://www.instagram.com/gicall_srls/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2 bg-slate-200 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300"
@@ -44,7 +45,25 @@ const Footer = () => {
                                 <FiInstagram size={20} />
                             </a>
                             <a
-                                href="https://linkedin.com/company/gicall"
+                                href="https://www.tiktok.com/@gicall_finestre"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-slate-200 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300"
+                                aria-label="TikTok GICALL"
+                            >
+                                <FaTiktok size={20} />
+                            </a>
+                            <a
+                                href="https://www.youtube.com/channel/UCne5HGMzSs75BY9cDu1FLzA"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-slate-200 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300"
+                                aria-label="YouTube GICALL"
+                            >
+                                <FaYoutube size={20} />
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/company/gicall/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="p-2 bg-slate-200 rounded-full hover:bg-amber-500 hover:text-white transition-all duration-300"

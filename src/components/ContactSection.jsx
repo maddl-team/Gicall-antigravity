@@ -19,6 +19,7 @@ const ContactSection = () => {
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSuccess, setIsSuccess] = useState(false);
+    const [errorMessage, setErrorMessage] = useState('');
 
     const handleInputChange = (e) => {
         const { name, value, type, checked } = e.target;
@@ -37,15 +38,31 @@ const ContactSection = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate API call
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        setIsSubmitting(false);
-        setIsSuccess(true);
-        setFormState({
-            firstName: '', lastName: '', email: '', phone: '', city: '', postalCode: '',
-            serviceType: 'Sostituzione vecchi infissi (Ristrutturazione)',
-            products: [], message: '', privacy: false
-        });
+        setErrorMessage('');
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formState),
+            });
+
+            const data = await res.json().catch(() => ({}));
+            if (!res.ok) {
+                throw new Error(data.error || 'Invio non riuscito, riprova.');
+            }
+
+            setIsSuccess(true);
+            setFormState({
+                firstName: '', lastName: '', email: '', phone: '', city: '', postalCode: '',
+                serviceType: 'Sostituzione vecchi infissi (Ristrutturazione)',
+                products: [], message: '', privacy: false
+            });
+        } catch (err) {
+            setErrorMessage(err.message || 'Errore imprevisto, riprova più tardi.');
+            setIsSuccess(false);
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
@@ -288,6 +305,12 @@ const ContactSection = () => {
                                         className="w-full px-4 py-3 rounded-lg bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-amber-500 outline-none"
                                     ></textarea>
                                 </div>
+
+                                {errorMessage && (
+                                    <div className="p-3 rounded-lg border border-red-200 bg-red-50 text-sm text-red-700">
+                                        {errorMessage}
+                                    </div>
+                                )}
 
                                 <label className="flex items-start gap-2 text-xs text-slate-500 cursor-pointer">
                                     <input
