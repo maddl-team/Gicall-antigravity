@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { buildMetadata } from '@/lib/metadata';
 import BlogToc from '@/components/BlogToc';
 
-const title = 'Come risolvere i rumori molesti in condominio?';
+const title = 'Rumori molesti in condominio: come risolvere?';
 const description =
-  'Norme, soglia di tolleranza, dialogo con i vicini e soluzioni tecniche (porte e finestre fonoassorbenti) per ridurre il rumore in casa.';
+  'Dover affrontare rumori molesti in condominio non è facile. Ma neanche impossibile. Ecco le soluzioni utili per gestire il problema.';
 const coverImage = '/images/blog_rumori-molesti.webp';
 const author = {
   name: 'Redazione GICALL',
@@ -20,10 +20,11 @@ const toc = [
 ];
 
 export const metadata = buildMetadata({
-  title: `${title} | Blog GICALL`,
+  title,
   description,
   path: '/blog/come-risolvere-i-rumori-molesti-in-condominio',
   image: coverImage,
+  keywords: 'rumori molesti in condominio',
 });
 
 export default function BlogPostPage() {

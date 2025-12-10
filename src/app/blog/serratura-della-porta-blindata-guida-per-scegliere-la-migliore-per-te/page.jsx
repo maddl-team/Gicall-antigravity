@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { buildMetadata } from '@/lib/metadata';
 import BlogToc from '@/components/BlogToc';
 
-const title = 'Serratura della porta blindata: guida per scegliere la migliore per te';
+const title = 'Come scegliere la serratura della porta blindata';
 const description =
-  'Confronto tra serrature meccaniche, elettroniche, cilindro europeo e classi di resistenza per aumentare la sicurezza della tua porta blindata.';
+  'Qual è la soluzione adatta per te? Ecco come scegliere la serratura della porta blindata che si adatti alle tue esigenze.';
 const coverImage = '/images/blog_serratura-1.webp';
 const author = {
   name: 'Redazione GICALL',
@@ -20,10 +20,11 @@ const toc = [
 ];
 
 export const metadata = buildMetadata({
-  title: `${title} | Blog GICALL`,
+  title,
   description,
   path: '/blog/serratura-della-porta-blindata-guida-per-scegliere-la-migliore-per-te',
   image: coverImage,
+  keywords: 'scegliere la serratura della porta blindata',
 });
 
 export default function BlogPostPage() {

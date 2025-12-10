@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/metadata";
 
-const title = "Blog di Gicall – Esperti in Serramenti e Infissi di Qualità";
+const title = "Blog di Gicall - Novità, Consigli e Guide su Infissi e Serramenti";
 const subtitle =
-  "Benvenuti nel blog di Gicall, il tuo punto di riferimento per finestre e porte in PVC e alluminio, grate in ferro, persiane e portoni blindati. Scopri le ultime novità, consigli utili e guide dettagliate per migliorare l’efficienza energetica e la sicurezza della tua casa. Approfitta delle detrazioni fiscali del 50% per la sostituzione degli infissi. Rimani aggiornato con noi per scegliere i migliori serramenti e migliorare il comfort abitativo.";
+  "Esplora il blog di Gicall per scoprire le ultime novità, consigli pratici e guide dettagliate su finestre, porte, grate e persiane.";
 
 const posts = [
   {
@@ -62,6 +62,7 @@ export const metadata = buildMetadata({
   description: subtitle,
   path: "/blog",
   image: "/images/blog_finestre.webp",
+  keywords: "blog infissi serramenti",
 });
 
 export default function BlogIndexPage() {

@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { buildMetadata } from '@/lib/metadata';
 import BlogToc from '@/components/BlogToc';
 
-const title = 'Quali sono i migliori vetri per porte e finestre? Ecco come scegliere';
+const title = 'Vetri per infissi: quale conviene scegliere?';
 const description =
-  "Tipologie di vetro, isolamento termo-acustico, sicurezza ed estetica: come scegliere i vetri giusti per infissi di casa o ufficio.";
+  'I vetri per infissi possono fare la differenza. Ecco alcuni modelli che puoi valutare per il tuo lavoro di ristrutturazione.';
 const coverImage = '/images/blog_vetro.webp';
 const author = {
   name: 'Redazione GICALL',
@@ -20,10 +20,11 @@ const toc = [
 ];
 
 export const metadata = buildMetadata({
-  title: `${title} | Blog GICALL`,
+  title,
   description,
   path: '/blog/quali-sono-i-migliori-vetri-per-porte-e-finestre-ecco-come-scegliere',
   image: coverImage,
+  keywords: 'Vetri per infissi',
 });
 
 export default function BlogPostPage() {

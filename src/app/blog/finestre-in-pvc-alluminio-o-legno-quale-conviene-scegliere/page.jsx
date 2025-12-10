@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { buildMetadata } from '@/lib/metadata';
 import BlogToc from '@/components/BlogToc';
 
-const title = 'Finestre in PVC, alluminio o legno: quale conviene scegliere?';
+const title = 'Materiale per le finestre, qual è il migliore?';
 const description =
-  "Confronto pratico tra PVC, legno e alluminio: pro e contro, isolamento, manutenzione e suggerimenti per scegliere l'infisso giusto.";
+  "Probabilmente non esiste un materiale per le finestre migliore o peggiore: molto dipende da come e dove vuoi montare i tuoi infissi.";
 const coverImage = '/images/blog_materiali-finestre.webp';
 const author = {
   name: 'Redazione GICALL',
@@ -20,10 +20,11 @@ const toc = [
 ];
 
 export const metadata = buildMetadata({
-  title: `${title} | Blog GICALL`,
+  title,
   description,
   path: '/blog/finestre-in-pvc-alluminio-o-legno-quale-conviene-scegliere',
   image: coverImage,
+  keywords: 'materiale per le finestre',
 });
 
 export default function BlogPostPage() {

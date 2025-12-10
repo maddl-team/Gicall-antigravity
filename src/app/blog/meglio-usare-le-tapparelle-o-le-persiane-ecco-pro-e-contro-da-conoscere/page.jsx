@@ -2,9 +2,9 @@ import Image from 'next/image';
 import { buildMetadata } from '@/lib/metadata';
 import BlogToc from '@/components/BlogToc';
 
-const title = 'Meglio usare le tapparelle o le persiane? Ecco pro e contro da conoscere';
+const title = 'Tapparelle o Persiane: quale sistema oscurante scegliere?';
 const description =
-  'Differenze tra tapparelle e persiane per luce, isolamento, sicurezza, manutenzione ed estetica. Quale scegliere per la tua casa?';
+  'Meglio usare le tapparelle o le persiane? Quale sistema oscurante preferire per la tua dimora? Ecco la risposta alle domande.';
 const coverImage = '/images/blog_tapparelle-persiane.webp';
 const author = {
   name: 'Redazione GICALL',
@@ -23,10 +23,11 @@ const toc = [
 ];
 
 export const metadata = buildMetadata({
-  title: `${title} | Blog GICALL`,
+  title,
   description,
   path: '/blog/meglio-usare-le-tapparelle-o-le-persiane-ecco-pro-e-contro-da-conoscere',
   image: coverImage,
+  keywords: 'Tapparelle o Persiane',
 });
 
 export default function BlogPostPage() {

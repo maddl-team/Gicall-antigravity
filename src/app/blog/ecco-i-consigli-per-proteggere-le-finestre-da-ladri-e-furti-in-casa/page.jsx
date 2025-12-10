@@ -2,8 +2,8 @@ import Image from 'next/image';
 import { buildMetadata } from '@/lib/metadata';
 import BlogToc from '@/components/BlogToc';
 
-const title = 'Ecco i consigli per proteggere le finestre da ladri e furti in casa';
-const description = 'Guida pratica per rendere finestre e portefinestre più sicure: grate, infissi di qualità, sistemi di allarme e buone abitudini.';
+const title = 'Come proteggere le finestre dai ladri e dai furti?';
+const description = "Sempre importante avere ben presente come proteggere le finestre dai ladri. Qui trovi un piccolo manuale d'uso.";
 const coverImage = '/images/blog_finestre.webp';
 const author = {
   name: 'Redazione GICALL',
@@ -20,10 +20,11 @@ const toc = [
 ];
 
 export const metadata = buildMetadata({
-  title: `${title} | Blog GICALL`,
+  title,
   description,
   path: '/blog/ecco-i-consigli-per-proteggere-le-finestre-da-ladri-e-furti-in-casa',
   image: coverImage,
+  keywords: 'proteggere le finestre dai ladri',
 });
 
 export default function BlogPostPage() {
