@@ -14,12 +14,19 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata = buildMetadata({
-  title: "Gicall - Infissi e Serramenti di Qualità",
-  description: "Produzione e installazione di serramenti in PVC, Alluminio e Legno. Made in Italy. Showroom a Roma e Orvieto.",
-  keywords: "Infissi, Serramenti, Finestre PVC, Finestre Alluminio, Roma, Orvieto",
-  path: "/",
-});
+export const metadata = {
+  ...buildMetadata({
+    title: "Gicall - Infissi e Serramenti di Qualità",
+    description: "Produzione e installazione di serramenti in PVC, Alluminio e Legno. Made in Italy. Showroom a Roma e Orvieto.",
+    keywords: "Infissi, Serramenti, Finestre PVC, Finestre Alluminio, Roma, Orvieto",
+    path: "/",
+  }),
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/images/gicall_favicon.png",
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
