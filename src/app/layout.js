@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import SmoothScroll from "../components/SmoothScroll";
 import StructuredData from "../components/StructuredData";
 import { buildMetadata } from "@/lib/metadata";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Configure Inter font
 const inter = Inter({
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
           {children}
         </MainWrapper>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   );
