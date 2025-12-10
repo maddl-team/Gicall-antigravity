@@ -21,7 +21,6 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '/' },
     { name: 'Chi Siamo', href: '/chi-siamo' },
     {
       name: 'Infissi & Serramenti',
@@ -50,6 +49,7 @@ const Header = () => {
         { name: 'Lavorazioni in Ferro', href: '/lavorazioni-ferro' },
       ]
     },
+    { name: 'Blog', href: '/blog' },
     { name: 'Servizi', href: '/servizi' },
     { name: 'Contatti', href: '/contatti' },
   ];
