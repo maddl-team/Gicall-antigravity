@@ -1,7 +1,6 @@
 "use client";
 import { motion } from 'framer-motion';
-import { FiStar } from 'react-icons/fi';
-import { FcGoogle } from 'react-icons/fc';
+import TrustIndexWidget from './TrustIndexWidget';
 
 const TestimonialsSection = () => {
     return (
@@ -29,27 +28,14 @@ const TestimonialsSection = () => {
                     </motion.p>
                 </div>
 
-                {/* Google Reviews Widget Placeholder */}
+                {/* TrustIndex Widget */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="bg-slate-50 border border-slate-200 rounded-2xl p-8 md:p-12 text-center shadow-inner"
+                    className="w-full"
                 >
-                    <div className="flex flex-col items-center justify-center gap-4 mb-6">
-                        <FcGoogle className="text-5xl" />
-                        <div className="flex items-center gap-1 text-amber-500 text-2xl">
-                            <FiStar className="fill-current" />
-                            <FiStar className="fill-current" />
-                            <FiStar className="fill-current" />
-                            <FiStar className="fill-current" />
-                            <FiStar className="fill-current" />
-                            <p className="text-slate-900 font-bold text-xl">Eccellente 4.9/5 su Google</p>
-                        </div>
-                        <p className="text-slate-500 italic">
-                            [Qui verrà caricato il widget dinamico delle recensioni Google]
-                        </p>
-                    </div>
+                    <TrustIndexWidget />
                 </motion.div>
             </div>
         </section>
