@@ -104,7 +104,7 @@ const ServicesPageContent = () => {
                 <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <Image
-                            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2532&auto=format&fit=crop"
+                            src="/images/gicall_servizi_slide.webp"
                             alt="Installazione professionale infissi"
                             fill
                             sizes="100vw"
@@ -198,12 +198,12 @@ const ServicesPageContent = () => {
                                             <Image
                                                 src={
                                                     index === 0
-                                                        ? "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2532&auto=format&fit=crop"
+                                                        ? "/images/gicall_servizi_1.webp"
                                                         : index === 1
-                                                            ? "https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2574&auto=format&fit=crop"
+                                                            ? "/images/gicall_servizi_2.webp"
                                                             : index === 2
-                                                                ? "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2670&auto=format&fit=crop"
-                                                                : "https://images.unsplash.com/photo-1554224311-beee4f0d696c?q=80&w=2670&auto=format&fit=crop"
+                                                                ? "/images/gicall_servizi_3.webp"
+                                                                : "/images/gicall_servizi_4.webp"
                                                 }
                                                 alt={service.title}
                                                 fill
