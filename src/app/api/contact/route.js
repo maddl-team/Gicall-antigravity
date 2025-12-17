@@ -22,6 +22,7 @@ export async function POST(request) {
     products = [],
     message = '',
     privacy,
+    page = '',
   } = body;
 
   const missing = [];
@@ -63,6 +64,7 @@ export async function POST(request) {
     <p><strong>Tipologia servizio:</strong> ${serviceType}</p>
     <p><strong>Prodotti di interesse:</strong> ${products.length ? products.join(', ') : 'Non specificato'}</p>
     <p><strong>Messaggio:</strong><br/>${message ? message.replace(/\\n/g, '<br/>') : 'Non specificato'}</p>
+    <p><strong>Pagina di origine:</strong> ${page || 'Non disponibile'}</p>
   `;
 
   const textBody = `
@@ -76,6 +78,7 @@ Tipologia servizio: ${serviceType}
 Prodotti di interesse: ${products.length ? products.join(', ') : 'Non specificato'}
 Messaggio:
 ${message || 'Non specificato'}
+Pagina di origine: ${page || 'Non disponibile'}
   `;
 
   try {

@@ -40,10 +40,15 @@ const ContactSection = () => {
         setIsSubmitting(true);
         setErrorMessage('');
         try {
+            const payload = {
+                ...formState,
+                page: typeof window !== 'undefined' ? window.location.pathname : '',
+            };
+
             const res = await fetch('/api/contact', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formState),
+                body: JSON.stringify(payload),
             });
 
             const data = await res.json().catch(() => ({}));
