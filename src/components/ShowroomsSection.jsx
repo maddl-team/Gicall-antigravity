@@ -9,7 +9,7 @@ const showrooms = [
         phone: '320 820 3824',
         hours: [
             'Lun - Ven: 09:00 - 13:00, 14:00 - 17:00',
-            'Sabato: 09:00 - 13:00',
+            'Sabato: Solo su appuntamento',
             'Domenica: Chiuso'
         ],
         mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.5!2d12.5386!3d42.1389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f5e5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sVia%20Traversa%20del%20Grillo%2C%2000060%20Capena%20RM!5e0!3m2!1sit!2sit!4v1620000000000!5m2!1sit!2sit'
@@ -19,9 +19,8 @@ const showrooms = [
         address: 'Via Tevere, 26, 05018 Sferracavallo TR',
         phone: '329 013 0130',
         hours: [
-            'Lun, Mer - Ven: 09:00 - 13:00, 16:30 - 19:30',
-            'Martedì: 09:00 - 13:00, 16:30 - 20:00',
-            'Sabato: 09:00 - 13:00',
+            'Lun - Ven: 09:00 - 13:00, 16:00 - 19:00',
+            'Sabato: Solo su appuntamento',
             'Domenica: Chiuso'
         ],
         mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.1!2d12.1000!3d42.7167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f5e5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sVia%20Tevere%2C%2026%2C%2005018%20Sferracavallo%20TR!5e0!3m2!1sit!2sit!4v1620000000000!5m2!1sit!2sit'

@@ -80,7 +80,7 @@ const Footer = () => {
                         <ul className="space-y-2 text-sm">
                             <li><Link href="/finestre-pvc" className="hover:text-amber-600 transition-colors">Finestre in PVC</Link></li>
                             <li><Link href="/finestre-alluminio" className="hover:text-amber-600 transition-colors">Finestre in Alluminio</Link></li>
-                            <li><Link href="/finestre-legno-alluminio" className="hover:text-amber-600 transition-colors">Legno Alluminio</Link></li>
+                            <li><Link href="/finestre-alluminio-legno" className="hover:text-amber-600 transition-colors">Alluminio Legno</Link></li>
                             <li><Link href="/sistemi-scorrevoli" className="hover:text-amber-600 transition-colors">Sistemi Scorrevoli</Link></li>
                         </ul>
                     </div>
@@ -113,8 +113,7 @@ const Footer = () => {
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-center gap-2">
                                 <FiPhone className="text-amber-600 shrink-0" size={16} />
-                                <a href="tel:+390763300000" className="hover:text-amber-600 transition-colors">+39 0763 300000</a>
-                            </li>
+                                <a href="tel:+393208203824" className="hover:text-amber-600 transition-colors">320 820 3824</a>              </li>
                             <li className="flex items-center gap-2">
                                 <FiMail className="text-amber-600 shrink-0" size={16} />
                                 <a href="mailto:info@gicall.it" className="hover:text-amber-600 transition-colors">info@gicall.it</a>

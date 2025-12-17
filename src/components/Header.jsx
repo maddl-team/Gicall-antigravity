@@ -27,7 +27,7 @@ const Header = () => {
       subLinks: [
         { name: 'Finestre in PVC', href: '/finestre-pvc' },
         { name: 'Finestre in Alluminio', href: '/finestre-alluminio' },
-        { name: 'Legno Alluminio', href: '/finestre-legno-alluminio' },
+        { name: 'Alluminio Legno', href: '/finestre-alluminio-legno' },
         { name: 'Sistemi Scorrevoli', href: '/sistemi-scorrevoli' },
       ]
     },
@@ -141,34 +141,34 @@ const Header = () => {
                   >
                     {link.name}
                   </Link>
-              )}
-
-              {/* Dropdown */}
-              <AnimatePresence>
-                {link.subLinks && activeDropdown === link.name && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 10 }}
-                    transition={{ duration: 0.2 }}
-                    className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden py-2"
-                    id={submenuId}
-                    role="menu"
-                  >
-                    {link.subLinks.map((subLink) => (
-                      <Link
-                        key={subLink.name}
-                        href={subLink.href}
-                        className="block px-4 py-3 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors focus:outline-none focus:bg-amber-50"
-                        role="menuitem"
-                      >
-                        {subLink.name}
-                      </Link>
-                    ))}
-                  </motion.div>
                 )}
-              </AnimatePresence>
-            </div>
+
+                {/* Dropdown */}
+                <AnimatePresence>
+                  {link.subLinks && activeDropdown === link.name && (
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 10 }}
+                      transition={{ duration: 0.2 }}
+                      className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden py-2"
+                      id={submenuId}
+                      role="menu"
+                    >
+                      {link.subLinks.map((subLink) => (
+                        <Link
+                          key={subLink.name}
+                          href={subLink.href}
+                          className="block px-4 py-3 text-sm text-slate-700 hover:bg-amber-50 hover:text-amber-600 transition-colors focus:outline-none focus:bg-amber-50"
+                          role="menuitem"
+                        >
+                          {subLink.name}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
             );
           })}
           <a

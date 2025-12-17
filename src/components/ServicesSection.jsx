@@ -15,7 +15,7 @@ const services = [
         links: [
             { text: 'Scopri Finestre in PVC', url: '/finestre-pvc' },
             { text: 'Scopri Finestre in Alluminio', url: '/finestre-alluminio' },
-            { text: 'Scopri Legno/Alluminio', url: '/finestre-legno-alluminio' },
+            { text: 'Scopri Alluminio/Legno', url: '/finestre-alluminio-legno' },
             { text: 'Scopri Sistemi Scorrevoli', url: '/sistemi-scorrevoli' }
         ]
     },

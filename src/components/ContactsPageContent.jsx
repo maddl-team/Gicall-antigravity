@@ -17,7 +17,7 @@ const ContactsPageContent = () => {
             address: "Via Traversa del Grillo, 00060 Capena (RM)",
             phone: "+39 320 820 3824",
             mobile: null,
-            email: "roma@gicall.it",
+            email: "info@gicall.it",
             directions: "A pochi minuti dall'uscita autostradale, comodo parcheggio riservato ai clienti.",
             mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.5!2d12.5386!3d42.1389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f5e5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sVia%20Traversa%20del%20Grillo%2C%2000060%20Capena%20RM!5e0!3m2!1sit!2sit!4v1620000000000!5m2!1sit!2sit"
         },
@@ -28,7 +28,7 @@ const ContactsPageContent = () => {
             address: "Via Tevere, 26, 05018 Sferracavallo (TR)",
             phone: "+39 329 013 0130",
             mobile: "+39 329 013 0130",
-            email: "orvieto@gicall.it",
+            email: "commerciale@gicall.it",
             directions: "Situato in [Zona specifica], facile da raggiungere dal centro.",
             mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2945.1!2d12.1000!3d42.7167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f5e5e5e5e5e5e%3A0x5e5e5e5e5e5e5e5e!2sVia%20Tevere%2C%2026%2C%2005018%20Sferracavallo%20TR!5e0!3m2!1sit!2sit!4v1620000000000!5m2!1sit!2sit"
         }
@@ -40,7 +40,7 @@ const ContactsPageContent = () => {
         { day: "Mercoledì", morning: "09:00 - 13:00", afternoon: "14:00 - 17:00" },
         { day: "Giovedì", morning: "09:00 - 13:00", afternoon: "14:00 - 17:00" },
         { day: "Venerdì", morning: "09:00 - 13:00", afternoon: "14:00 - 17:00" },
-        { day: "Sabato", morning: "09:00 - 13:00", afternoon: "Chiuso" },
+        { day: "Sabato", morning: "Solo su appuntamento", afternoon: "" },
         { day: "Domenica", morning: "Chiuso", afternoon: "Chiuso" }
     ];
 
