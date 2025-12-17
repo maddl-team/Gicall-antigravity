@@ -327,7 +327,10 @@ const ContactSection = () => {
                                         className="mt-1 rounded text-amber-500 focus:ring-amber-500"
                                     />
                                     <span>
-                                        Acconsento al trattamento dei dati personali secondo la Privacy Policy.
+                                        Acconsento al trattamento dei dati personali secondo la{' '}
+                                        <a href="/privacy-policy" className="text-amber-600 hover:text-amber-700 underline">
+                                            Privacy Policy
+                                        </a>.
                                     </span>
                                 </label>
 

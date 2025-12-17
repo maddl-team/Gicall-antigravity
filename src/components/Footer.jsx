@@ -127,9 +127,8 @@ const Footer = () => {
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
                         <p>&copy; {new Date().getFullYear()} Gicall S.r.l.s. - P.IVA 01234567890 - Tutti i diritti riservati</p>
                         <div className="flex gap-6">
-                            <a href="#" className="hover:text-amber-600 transition-colors">Privacy Policy</a>
-                            <a href="#" className="hover:text-amber-600 transition-colors">Cookie Policy</a>
-                            <a href="#" className="hover:text-amber-600 transition-colors">Note Legali</a>
+                            <Link href="/privacy-policy" className="hover:text-amber-600 transition-colors">Privacy Policy</Link>
+                            <Link href="/cookie-policy" className="hover:text-amber-600 transition-colors">Cookie Policy</Link>
                         </div>
                     </div>
                 </div>
