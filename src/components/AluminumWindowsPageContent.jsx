@@ -103,7 +103,7 @@ const AluminumWindowsPageContent = () => {
                                 className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
                             >
                                 <Image
-                                    src="/images/gicall_finestre_alluminio_taglio-termico.webp"
+                                    src="/images/gicall_finestre_alluminio_taglio-termico2.webp"
                                     alt="Dettaglio finestra alluminio"
                                     fill
                                     sizes="(max-width: 1024px) 100vw, 50vw"
