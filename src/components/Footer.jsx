@@ -125,7 +125,16 @@ const Footer = () => {
                 {/* Bottom Bar */}
                 <div className="border-t border-slate-200 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-                        <p>&copy; {new Date().getFullYear()} Gicall S.r.l.s. - P.IVA 01234567890 - Tutti i diritti riservati</p>
+                        <div className="flex flex-col items-center md:items-start gap-2">
+                            <p>&copy; {new Date().getFullYear()} Gicall S.r.l.s. - P.IVA 01234567890 - Tutti i diritti riservati</p>
+                            <p className="opacity-80">
+                                Web Marketing Agency:
+                                <a href="https://maddl.agency/" target="_blank" rel="noopener noreferrer nofollow" className="inline-flex align-items-center ml-1 hover:opacity-100 transition-opacity">
+                                    MADDL Agency
+                                    <img src="https://maddl.agency/app/uploads/2019/10/logo-maddl-footer.png" alt="Logo MADDL Agency" style={{ height: '30px', marginLeft: '8px' }} />
+                                </a>
+                            </p>
+                        </div>
                         <div className="flex gap-6">
                             <Link href="/privacy-policy" className="hover:text-amber-600 transition-colors">Privacy Policy</Link>
                             <Link href="/cookie-policy" className="hover:text-amber-600 transition-colors">Cookie Policy</Link>
