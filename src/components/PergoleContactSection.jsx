@@ -350,7 +350,7 @@ const PergoleContactSection = () => {
                                     disabled={isSubmitting}
                                     className="w-full btn btn-primary py-4 text-lg flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
                                 >
-                                    {isSubmitting ? 'Invio in corso...' : <>Invia Richiesta e Scarica Catalogo <FiSend /></>}
+                                    {isSubmitting ? 'Invio in corso...' : <>Invia Richiesta <FiSend /></>}
                                 </button>
                             </form>
                         )}
