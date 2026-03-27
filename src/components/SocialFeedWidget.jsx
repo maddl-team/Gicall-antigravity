@@ -11,7 +11,7 @@ const SocialFeedWidget = () => {
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].isIntersecting) {
                 const script = document.createElement('script');
-                script.src = "https://cdn.trustindex.io/loader-feed.js?4c0a76e60fa647067d067d0a3f7";
+                script.src = "https://cdn.trustindex.io/loader-feed.js?3d496c4683e4173f2a46c29dfed";
                 script.async = true;
                 script.defer = true;
 

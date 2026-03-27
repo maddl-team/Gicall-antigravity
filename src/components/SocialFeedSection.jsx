@@ -1,6 +1,5 @@
 "use client";
 import Link from 'next/link';
-import { FiInstagram } from 'react-icons/fi';
 import SocialFeedWidget from './SocialFeedWidget';
 
 const SocialFeedSection = () => {
@@ -17,14 +16,6 @@ const SocialFeedSection = () => {
                             Seguici su Instagram per scoprire i "dietro le quinte" e le ultime installazioni.
                         </p>
                     </div>
-                    <a
-                        href="https://instagram.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-amber-600 font-bold hover:text-amber-700 transition-colors"
-                    >
-                        <FiInstagram className="text-xl" /> Seguici su Instagram
-                    </a>
                 </div>
 
                 <div className="w-full">

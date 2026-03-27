@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiWind, FiUmbrella, FiMaximize, FiSun } from 'react-icons/fi';
 import ContactSection from './ContactSection';
+import TestimonialsSection from './TestimonialsSection';
 
 const PergolasPageContent = () => {
     return (
@@ -225,8 +226,11 @@ const PergolasPageContent = () => {
                 </div>
             </section>
 
+            {/* TESTIMONIALS SECTION */}
+            <TestimonialsSection />
+
             {/* SEZIONE 7: CTA FINALE */}
-            <section className="py-20 bg-white text-center">
+            <section className="pt-0 pb-20 bg-white text-center">
                 <div className="container max-w-3xl">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 text-slate-900">
                         Vivi la tua estate al fresco.
@@ -240,9 +244,6 @@ const PergolasPageContent = () => {
                     >
                         RICHIEDI SOPRALLUOGO GRATUITO
                     </a>
-                    <div className="mt-4">
-                        <a href="/assets/catalogo-outdoor.pdf" className="text-slate-500 hover:text-amber-500 transition-colors underline" onClick={(e) => e.preventDefault()}>Scarica il catalogo Outdoor GICALL.</a>
-                    </div>
                 </div>
             </section>
 

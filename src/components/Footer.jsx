@@ -1,5 +1,5 @@
 import { FiFacebook, FiInstagram, FiLinkedin, FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
-import { FaTiktok, FaYoutube } from 'react-icons/fa6';
+import { FaTiktok, FaYoutube, FaWhatsapp } from 'react-icons/fa6';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -113,7 +113,12 @@ const Footer = () => {
                         <ul className="space-y-3 text-sm">
                             <li className="flex items-center gap-2">
                                 <FiPhone className="text-amber-600 shrink-0" size={16} />
-                                <a href="tel:+393208203824" className="hover:text-amber-600 transition-colors">320 820 3824</a>              </li>
+                                <a href="tel:+390698267004" className="hover:text-amber-600 transition-colors">06 98267 004</a>
+                            </li>
+                            <li className="flex items-center gap-2">
+                                <FaWhatsapp className="text-amber-600 shrink-0" size={16} />
+                                <a href="https://wa.me/390698267004" className="hover:text-amber-600 transition-colors">06 98267 004</a>
+                            </li>
                             <li className="flex items-center gap-2">
                                 <FiMail className="text-amber-600 shrink-0" size={16} />
                                 <a href="mailto:info@gicall.it" className="hover:text-amber-600 transition-colors">info@gicall.it</a>

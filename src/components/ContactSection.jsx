@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FiSend, FiCheckCircle, FiPhone, FiMail } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa6';
 
 const ContactSection = () => {
     const [formState, setFormState] = useState({
@@ -140,11 +141,11 @@ const ContactSection = () => {
                             <div className="space-y-3">
                                 <div className="flex items-center gap-3 text-slate-300">
                                     <FiPhone className="text-amber-500" />
-                                    <span>Roma (Capena): <a href="tel:+393208203824" className="hover:text-white transition-colors font-semibold">320 820 3824</a></span>
+                                    <span>Telefono: <a href="tel:+390698267004" className="hover:text-white transition-colors font-semibold">06 98267 004</a></span>
                                 </div>
                                 <div className="flex items-center gap-3 text-slate-300">
-                                    <FiPhone className="text-amber-500" />
-                                    <span>Orvieto: <a href="tel:+393290130130" className="hover:text-white transition-colors font-semibold">329 013 0130</a></span>
+                                    <FaWhatsapp className="text-amber-500" />
+                                    <span>Whatsapp: <a href="https://wa.me/390698267004" className="hover:text-white transition-colors font-semibold">06 98267 004</a></span>
                                 </div>
                                 <div className="flex items-center gap-3 text-slate-300">
                                     <FiMail className="text-amber-500" />
