@@ -1,12 +1,13 @@
 "use client";
 import { motion } from 'framer-motion';
 import { FiMapPin, FiPhone, FiClock } from 'react-icons/fi';
+import { FaWhatsapp } from 'react-icons/fa6';
 
 const showrooms = [
     {
         city: 'Roma (Capena)',
         address: 'Via Traversa del Grillo, 00060 Capena RM',
-        phone: '320 820 3824',
+        phone: '06 98267 004',
         hours: [
             'Lun - Ven: 09:00 - 13:00, 14:00 - 17:00',
             'Sabato: Solo su appuntamento',
@@ -17,7 +18,7 @@ const showrooms = [
     {
         city: 'Orvieto (Sferracavallo)',
         address: 'Via Tevere, 26, 05018 Sferracavallo TR',
-        phone: '329 013 0130',
+        phone: '06 98267 004',
         hours: [
             'Lun - Ven: 09:00 - 13:00, 16:00 - 19:00',
             'Sabato: Solo su appuntamento',
@@ -88,7 +89,11 @@ const ShowroomsSection = () => {
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <FiPhone className="flex-shrink-0" />
-                                        <p className="font-semibold">{showroom.phone}</p>
+                                        <p className="font-semibold"><a href={`tel:+39${showroom.phone.replace(/\s/g, '')}`}>{showroom.phone}</a></p>
+                                    </div>
+                                    <div className="flex items-center gap-3">
+                                        <FaWhatsapp className="flex-shrink-0 text-amber-500" />
+                                        <p className="font-semibold"><a href={`https://wa.me/39${showroom.phone.replace(/\s/g, '')}`}>{showroom.phone}</a></p>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <FiClock className="mt-1 flex-shrink-0" />
