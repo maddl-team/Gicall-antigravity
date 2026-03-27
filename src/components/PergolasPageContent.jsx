@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { FiWind, FiUmbrella, FiMaximize, FiSun } from 'react-icons/fi';
-import ContactSection from './ContactSection';
+import PergoleContactSection from './PergoleContactSection';
 import TestimonialsSection from './TestimonialsSection';
 
 const PergolasPageContent = () => {
@@ -249,7 +249,7 @@ const PergolasPageContent = () => {
 
             {/* CONTACT SECTION */}
             <div id="contact">
-                <ContactSection />
+                <PergoleContactSection />
             </div>
         </div>
     );

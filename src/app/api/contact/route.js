@@ -23,6 +23,9 @@ export async function POST(request) {
     message = '',
     privacy,
     page = '',
+    ambiente_installazione = '',
+    modello_interesse = '',
+    interesse_ecobonus = '',
   } = body;
 
   const missing = [];
@@ -65,6 +68,9 @@ export async function POST(request) {
     <p><strong>Prodotti di interesse:</strong> ${products.length ? products.join(', ') : 'Non specificato'}</p>
     <p><strong>Messaggio:</strong><br/>${message ? message.replace(/\\n/g, '<br/>') : 'Non specificato'}</p>
     <p><strong>Pagina di origine:</strong> ${page || 'Non disponibile'}</p>
+    ${ambiente_installazione ? `<p><strong>Ambiente installazione:</strong> ${ambiente_installazione}</p>` : ''}
+    ${modello_interesse ? `<p><strong>Modello di interesse:</strong> ${modello_interesse}</p>` : ''}
+    ${interesse_ecobonus ? `<p><strong>Interesse Ecobonus:</strong> ${interesse_ecobonus}</p>` : ''}
   `;
 
   const textBody = `
@@ -79,7 +85,7 @@ Prodotti di interesse: ${products.length ? products.join(', ') : 'Non specificat
 Messaggio:
 ${message || 'Non specificato'}
 Pagina di origine: ${page || 'Non disponibile'}
-  `;
+${ambiente_installazione ? `Ambiente installazione: ${ambiente_installazione}\n` : ''}${modello_interesse ? `Modello di interesse: ${modello_interesse}\n` : ''}${interesse_ecobonus ? `Interesse Ecobonus: ${interesse_ecobonus}\n` : ''}`;
 
   try {
     await transporter.sendMail({
