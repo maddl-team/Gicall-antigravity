@@ -101,7 +101,7 @@ const ServicesPageContent = () => {
         <div className="font-sans text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900">
             <main>
                 {/* Hero Section */}
-                <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
+                <section className="relative min-h-screen md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <Image
                             src="/images/gicall_servizi_slide.webp"
@@ -114,7 +114,7 @@ const ServicesPageContent = () => {
                         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/90"></div>
                     </div>
 
-                    <div className="container relative z-10 px-4 pt-32 pb-12 md:pt-20 md:pb-0 text-center">
+                    <div className="container relative z-10 px-4 pt-48 pb-32 md:pt-20 md:pb-0 text-center">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}

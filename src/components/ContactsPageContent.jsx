@@ -48,7 +48,7 @@ const ContactsPageContent = () => {
         <div className="font-sans text-slate-900 antialiased selection:bg-amber-100 selection:text-amber-900">
             <main>
                 {/* Hero Section */}
-                <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
+                <section className="relative min-h-screen md:min-h-[70vh] flex items-center justify-center overflow-hidden bg-slate-900">
                     <div className="absolute inset-0 z-0">
                         <Image
                             src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=2670&auto=format&fit=crop"
@@ -61,7 +61,7 @@ const ContactsPageContent = () => {
                         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/90"></div>
                     </div>
 
-                    <div className="container relative z-10 text-center px-4 pt-32 pb-12 md:pt-20 md:pb-0">
+                    <div className="container relative z-10 text-center px-4 pt-48 pb-32 md:pt-20 md:pb-0">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
