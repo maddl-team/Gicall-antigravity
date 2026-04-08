@@ -22,7 +22,7 @@ const PvcWindowsPageContent = () => {
                     />
                 </div>
 
-                <div className="container relative z-20 px-4 pt-20 text-center">
+                <div className="container relative z-10 px-4 pt-32 pb-12 md:pt-20 md:pb-0 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}

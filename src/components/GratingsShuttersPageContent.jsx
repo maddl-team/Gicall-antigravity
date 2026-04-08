@@ -22,7 +22,7 @@ const GratingsShuttersPageContent = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/90"></div>
                 </div>
 
-                <div className="container relative z-10 text-center px-4 pt-20">
+                <div className="container relative z-10 text-center px-4 pt-32 pb-12 md:pt-20 md:pb-0">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}

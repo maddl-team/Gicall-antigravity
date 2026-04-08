@@ -20,22 +20,22 @@ const HeroSection = () => {
             </div>
 
             {/* Content */}
-            <div className="container relative z-10 text-center text-white px-4">
+            <div className="container relative z-10 text-center text-white px-4 pt-28 md:pt-0">
                 <motion.div
                     initial={{ opacity: 1, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    <span className="inline-block py-1 px-3 rounded-full bg-amber-500/20 border border-amber-500/50 text-amber-400 text-sm font-semibold mb-6 backdrop-blur-sm">
+                    <span className="inline-block py-1 px-3 rounded-full bg-amber-500/20 border border-amber-500/50 text-amber-400 text-sm font-semibold mb-4 md:mb-6 backdrop-blur-sm">
                         PRODUZIONE MADE IN ITALY
                     </span>
-                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-white">
+                    <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight text-white">
                         Produzione Infissi e Serramenti: <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">
                             L'Eccellenza del Made in Italy a Casa Tua
                         </span>
                     </h1>
-                    <p className="text-lg md:text-xl text-slate-200 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base md:text-xl text-slate-200 mb-4 md:mb-10 max-w-2xl mx-auto leading-relaxed">
                         Finestre, Porte e Soluzioni Outdoor progettate per durare.
                         Dalla nostra fabbrica direttamente ai tuoi spazi, garantendo risparmio energetico, sicurezza e design.
                     </p>
@@ -57,7 +57,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
+                className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 z-20"
             >
                 <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-1">
                     <motion.div

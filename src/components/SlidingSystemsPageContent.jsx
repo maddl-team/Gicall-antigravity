@@ -67,7 +67,7 @@ const SlidingSystemsPageContent = () => {
                         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-slate-900/90 z-10"></div>
                     </div>
 
-                    <div className="container relative z-10 px-4 pt-20 text-center">
+                    <div className="container relative z-10 px-4 pt-32 pb-12 md:pt-20 md:pb-0 text-center">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
