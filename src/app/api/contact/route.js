@@ -28,6 +28,10 @@ export async function POST(request) {
     interesse_ecobonus = '',
   } = body;
 
+  const isPergoleForm = Boolean(
+    ambiente_installazione || modello_interesse || interesse_ecobonus
+  );
+
   const missing = [];
   if (!firstName) missing.push('firstName');
   if (!lastName) missing.push('lastName');
@@ -35,12 +39,14 @@ export async function POST(request) {
   if (!phone) missing.push('phone');
   if (!city) missing.push('city');
   if (!postalCode) missing.push('postalCode');
-  if (!serviceType) missing.push('serviceType');
+  if (!isPergoleForm && !serviceType) missing.push('serviceType');
   if (!privacy) missing.push('privacy');
 
   if (missing.length) {
     return NextResponse.json({ error: 'Campi mancanti', fields: missing }, { status: 400 });
   }
+
+  const serviceTypeLabel = serviceType || 'Non specificato';
 
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS, MAIL_FROM, MAIL_TO } = process.env;
   if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS) {
@@ -64,7 +70,7 @@ export async function POST(request) {
     <p><strong>Telefono:</strong> ${phone}</p>
     <p><strong>Città:</strong> ${city}</p>
     <p><strong>CAP:</strong> ${postalCode}</p>
-    <p><strong>Tipologia servizio:</strong> ${serviceType}</p>
+    <p><strong>Tipologia servizio:</strong> ${serviceTypeLabel}</p>
     <p><strong>Prodotti di interesse:</strong> ${products.length ? products.join(', ') : 'Non specificato'}</p>
     <p><strong>Messaggio:</strong><br/>${message ? message.replace(/\\n/g, '<br/>') : 'Non specificato'}</p>
     <p><strong>Pagina di origine:</strong> ${page || 'Non disponibile'}</p>
@@ -80,7 +86,7 @@ Email: ${email}
 Telefono: ${phone}
 Città: ${city}
 CAP: ${postalCode}
-Tipologia servizio: ${serviceType}
+Tipologia servizio: ${serviceTypeLabel}
 Prodotti di interesse: ${products.length ? products.join(', ') : 'Non specificato'}
 Messaggio:
 ${message || 'Non specificato'}
