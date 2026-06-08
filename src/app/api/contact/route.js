@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
+import { verifyRecaptcha } from '@/lib/verifyRecaptcha';
 
 export const runtime = 'nodejs';
 
@@ -26,7 +27,13 @@ export async function POST(request) {
     ambiente_installazione = '',
     modello_interesse = '',
     interesse_ecobonus = '',
+    recaptchaToken = '',
   } = body;
+
+  const recaptchaValid = await verifyRecaptcha(recaptchaToken);
+  if (!recaptchaValid) {
+    return NextResponse.json({ error: 'Verifica reCAPTCHA non valida. Riprova.' }, { status: 400 });
+  }
 
   const isPergoleForm = Boolean(
     ambiente_installazione || modello_interesse || interesse_ecobonus

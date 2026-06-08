@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { FiSend, FiCheckCircle, FiPhone, FiMail } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa6';
+import { getRecaptchaToken } from '@/lib/recaptchaV3';
+import RecaptchaNotice from './RecaptchaNotice';
 
 const PergoleContactSection = () => {
     const [formState, setFormState] = useState({
@@ -36,9 +38,20 @@ const PergoleContactSection = () => {
         e.preventDefault();
         setIsSubmitting(true);
         setErrorMessage('');
+
+        let recaptchaToken;
+        try {
+            recaptchaToken = await getRecaptchaToken('contact');
+        } catch {
+            setErrorMessage('Verifica di sicurezza non riuscita. Riprova.');
+            setIsSubmitting(false);
+            return;
+        }
+
         try {
             const payload = {
                 ...formState,
+                recaptchaToken,
                 page: typeof window !== 'undefined' ? window.location.pathname : '',
             };
 
@@ -344,6 +357,8 @@ const PergoleContactSection = () => {
                                         </a>.
                                     </span>
                                 </label>
+
+                                <RecaptchaNotice />
 
                                 <button
                                     type="submit"
