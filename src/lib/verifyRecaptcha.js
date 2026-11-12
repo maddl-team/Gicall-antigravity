@@ -1,6 +1,6 @@
 const RECAPTCHA_ACTION = 'contact';
 
-export async function verifyRecaptcha(token) {
+export async function verifyRecaptcha(token, action = RECAPTCHA_ACTION) {
   const secret = process.env.RECAPTCHA_SECRET_KEY;
   if (!secret) {
     console.error('RECAPTCHA_SECRET_KEY non configurata');
@@ -29,7 +29,7 @@ export async function verifyRecaptcha(token) {
       return false;
     }
 
-    if (data.action && data.action !== RECAPTCHA_ACTION) {
+    if (data.action && data.action !== action) {
       return false;
     }
 

@@ -18,6 +18,7 @@ export const siteSections = [
   { path: '/servizi', name: 'Servizi' },
   { path: '/zanzariere', name: 'Zanzariere' },
   { path: '/contatti', name: 'Contatti' },
+  { path: '/pass-casa', name: 'Inaugurazione showroom Capena' },
 ];
 
 const toAbsoluteUrl = (pathOrUrl) =>

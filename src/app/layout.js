@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google"; // Using Inter as per legacy design
+import { Cormorant_Garamond, Inter } from "next/font/google"; // Inter for the site; Cormorant for the inauguration landing
 import "./globals.css";
 import Header from "../components/Header";
 import MainWrapper from "../components/MainWrapper";
@@ -12,6 +12,14 @@ import Script from "next/script";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
@@ -31,7 +39,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="it" className={inter.variable} data-scroll-behavior="smooth">
+    <html lang="it" className={`${inter.variable} ${cormorant.variable}`} data-scroll-behavior="smooth">
       <head>
         <Script id="gtm-consent-init" strategy="beforeInteractive">
           {`

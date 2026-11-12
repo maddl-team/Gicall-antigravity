@@ -1,3 +1,4 @@
+import InaugurazioneInvite from '../components/pass-casa/InaugurazioneInvite';
 import HeroSection from '../components/HeroSection';
 import USPSection from '../components/USPSection';
 import ServicesSection from '../components/ServicesSection';
@@ -19,6 +20,7 @@ export const metadata = buildMetadata({
 export default function HomePage() {
   return (
     <>
+      <InaugurazioneInvite />
       <HeroSection />
       <USPSection />
       <ServicesSection />

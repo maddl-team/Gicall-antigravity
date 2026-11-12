@@ -5,6 +5,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   /* Using Inter variable from layout.js */
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
   --font-mono: var(--font-geist-mono);
 
   /* Custom Colors from legacy tailwind.config.js */
